@@ -1,0 +1,10 @@
+C:\Users\danie\Documents\GitHub\GateKeeper\GUI\GateKeeperGUI\obj\Debug\GateKeeperGUI.csproj.AssemblyReference.cache
+C:\Users\danie\Documents\GitHub\GateKeeper\GUI\GateKeeperGUI\obj\Debug\GateKeeperGUI.Form1.resources
+C:\Users\danie\Documents\GitHub\GateKeeper\GUI\GateKeeperGUI\obj\Debug\GateKeeperGUI.Properties.Resources.resources
+C:\Users\danie\Documents\GitHub\GateKeeper\GUI\GateKeeperGUI\obj\Debug\GateKeeperGUI.csproj.GenerateResource.cache
+C:\Users\danie\Documents\GitHub\GateKeeper\GUI\GateKeeperGUI\obj\Debug\GateKeeperGUI.csproj.CoreCompileInputs.cache
+C:\Users\danie\Documents\GitHub\GateKeeper\GUI\GateKeeperGUI\bin\Debug\GateKeeperGUI.exe.config
+C:\Users\danie\Documents\GitHub\GateKeeper\GUI\GateKeeperGUI\bin\Debug\GateKeeperGUI.exe
+C:\Users\danie\Documents\GitHub\GateKeeper\GUI\GateKeeperGUI\bin\Debug\GateKeeperGUI.pdb
+C:\Users\danie\Documents\GitHub\GateKeeper\GUI\GateKeeperGUI\obj\Debug\GateKeeperGUI.exe
+C:\Users\danie\Documents\GitHub\GateKeeper\GUI\GateKeeperGUI\obj\Debug\GateKeeperGUI.pdb

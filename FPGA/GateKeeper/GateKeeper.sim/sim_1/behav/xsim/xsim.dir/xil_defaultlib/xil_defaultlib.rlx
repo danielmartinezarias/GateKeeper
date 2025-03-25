@@ -1,0 +1,15 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1742906548,verilog,,C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/GateKeeper.v,,clk_wiz_0,,,../../../../GateKeeper.ip_user_files/ipstatic,,,,,
+C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1742906548,verilog,,C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../GateKeeper.ip_user_files/ipstatic,,,,,
+C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/GateKeeper.v,1742918031,verilog,,C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/OneShot.v,,GateKeeper,,,../../../../GateKeeper.ip_user_files/ipstatic,,,,,
+C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/OneShot.v,1742898415,verilog,,C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/UART_Rx.v,,OneShot,,,../../../../GateKeeper.ip_user_files/ipstatic,,,,,
+C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/UART_Rx.v,1718705205,verilog,,C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v,,UART_Rx,,,../../../../GateKeeper.ip_user_files/ipstatic,,,,,
+C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v,1742915859,verilog,,C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/pulseShaper.v,,control_parametros,,,../../../../GateKeeper.ip_user_files/ipstatic,,,,,
+C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/pulseShaper.v,1742911663,verilog,,C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/tick_generator.v,,pulseShaper,,,../../../../GateKeeper.ip_user_files/ipstatic,,,,,
+C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/tb_GateKeeper.v,1742918244,verilog,,,,tb_GateKeeper,,,../../../../GateKeeper.ip_user_files/ipstatic,,,,,
+C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/tick_generator.v,1709821835,verilog,,C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/top.v,,tick_generator,,,../../../../GateKeeper.ip_user_files/ipstatic,,,,,
+C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/top.v,1742909055,verilog,,C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/tb_GateKeeper.v,,top,,,../../../../GateKeeper.ip_user_files/ipstatic,,,,,

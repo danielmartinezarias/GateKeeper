@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../GateKeeper.ip_user_files/ipstatic" \
+"../../../../GateKeeper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../GateKeeper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../srcs/GateKeeper.v" \
+"../../../../srcs/OneShot.v" \
+"../../../../srcs/UART_Rx.v" \
+"../../../../srcs/control_parametros.v" \
+"../../../../srcs/pulseShaper.v" \
+"../../../../srcs/tick_generator.v" \
+"../../../../srcs/top.v" \
+"../../../../srcs/tb_GateKeeper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

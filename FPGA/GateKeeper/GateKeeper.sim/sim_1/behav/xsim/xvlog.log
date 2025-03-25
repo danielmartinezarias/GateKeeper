@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/GateKeeper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GateKeeper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/OneShot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OneShot
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/UART_Rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_parametros
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/pulseShaper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulseShaper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/tick_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tick_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/tb_GateKeeper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_GateKeeper
