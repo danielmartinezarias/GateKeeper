@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1742984197">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1742986548">
   <File Type="ROUTE-PWR" Name="GateKeeper_BD_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="GateKeeper_BD_wrapper.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="GateKeeper_BD_wrapper_power_summary_routed.pb"/>
@@ -197,10 +197,13 @@
     </Step>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_GateKeeper_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_rst_ps7_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_tick_generator_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_UART_Rx_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_GateKeeper_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_GateKeeper_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_control_parametros_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_processing_system7_0_0"/>
 </GenRun>

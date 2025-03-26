@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Wed Mar 26 11:20:54 2025
+| Date         : Wed Mar 26 11:58:00 2025
 | Host         : donaufeld running 64-bit major release  (build 9200)
 | Command      : report_drc -file GateKeeper_BD_wrapper_drc_routed.rpt -pb GateKeeper_BD_wrapper_drc_routed.pb -rpx GateKeeper_BD_wrapper_drc_routed.rpx
 | Design       : GateKeeper_BD_wrapper
@@ -24,18 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 1
-+--------+----------+--------------------+------------+
-| Rule   | Severity | Description        | Violations |
-+--------+----------+--------------------+------------+
-| ZPS7-1 | Warning  | PS7 block required | 1          |
-+--------+----------+--------------------+------------+
+             Violations found: 0
++------+----------+-------------+------------+
+| Rule | Severity | Description | Violations |
++------+----------+-------------+------------+
++------+----------+-------------+------------+
 
 2. REPORT DETAILS
 -----------------
-ZPS7-1#1 Warning
-PS7 block required  
-The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
-Related violations: <none>
-
 

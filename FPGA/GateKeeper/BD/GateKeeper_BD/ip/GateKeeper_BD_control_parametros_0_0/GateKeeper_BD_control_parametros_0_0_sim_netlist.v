@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Wed Mar 26 11:18:50 2025
+// Date        : Wed Mar 26 11:52:42 2025
 // Host        : donaufeld running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_0/GateKeeper_BD_control_parametros_0_0_sim_netlist.v
@@ -20,16 +20,20 @@ module GateKeeper_BD_control_parametros_0_0
    (clk,
     readyRx,
     bufferRx,
+    version,
     window,
     pulseShaper_width,
     enableGateKeeper);
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk;
   input readyRx;
   input [7:0]bufferRx;
+  output [7:0]version;
   output [15:0]window;
   output [7:0]pulseShaper_width;
   output enableGateKeeper;
 
+  wire \<const0> ;
+  wire \<const1> ;
   wire [7:0]bufferRx;
   wire clk;
   wire enableGateKeeper;
@@ -37,6 +41,18 @@ module GateKeeper_BD_control_parametros_0_0
   wire readyRx;
   wire [15:0]window;
 
+  assign version[7] = \<const0> ;
+  assign version[6] = \<const0> ;
+  assign version[5] = \<const0> ;
+  assign version[4] = \<const0> ;
+  assign version[3] = \<const0> ;
+  assign version[2] = \<const0> ;
+  assign version[1] = \<const1> ;
+  assign version[0] = \<const1> ;
+  GND GND
+       (.G(\<const0> ));
+  VCC VCC
+       (.P(\<const1> ));
   GateKeeper_BD_control_parametros_0_0_control_parametros inst
        (.bufferRx(bufferRx),
         .clk(clk),

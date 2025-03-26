@@ -22,6 +22,7 @@ module control_parametros(
    input clk,
 	input readyRx,
 	input [7:0] bufferRx,
+	output reg [7:0] version = 8'd3,
 	output reg [15:0] window = 16'd6,
 	output reg [7:0] pulseShaper_width = 8'd20,
 	output reg enableGateKeeper = 1'b0

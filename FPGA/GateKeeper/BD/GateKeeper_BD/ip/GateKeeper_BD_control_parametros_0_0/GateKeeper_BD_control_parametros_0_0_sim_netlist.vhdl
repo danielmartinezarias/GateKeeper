@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Wed Mar 26 11:18:50 2025
+-- Date        : Wed Mar 26 11:52:42 2025
 -- Host        : donaufeld running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_0/GateKeeper_BD_control_parametros_0_0_sim_netlist.vhdl
@@ -1376,6 +1376,7 @@ entity GateKeeper_BD_control_parametros_0_0 is
     clk : in STD_LOGIC;
     readyRx : in STD_LOGIC;
     bufferRx : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    version : out STD_LOGIC_VECTOR ( 7 downto 0 );
     window : out STD_LOGIC_VECTOR ( 15 downto 0 );
     pulseShaper_width : out STD_LOGIC_VECTOR ( 7 downto 0 );
     enableGateKeeper : out STD_LOGIC
@@ -1393,11 +1394,29 @@ entity GateKeeper_BD_control_parametros_0_0 is
 end GateKeeper_BD_control_parametros_0_0;
 
 architecture STRUCTURE of GateKeeper_BD_control_parametros_0_0 is
+  signal \<const0>\ : STD_LOGIC;
+  signal \<const1>\ : STD_LOGIC;
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
   attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
 begin
+  version(7) <= \<const0>\;
+  version(6) <= \<const0>\;
+  version(5) <= \<const0>\;
+  version(4) <= \<const0>\;
+  version(3) <= \<const0>\;
+  version(2) <= \<const0>\;
+  version(1) <= \<const1>\;
+  version(0) <= \<const1>\;
+GND: unisim.vcomponents.GND
+     port map (
+      G => \<const0>\
+    );
+VCC: unisim.vcomponents.VCC
+     port map (
+      P => \<const1>\
+    );
 inst: entity work.GateKeeper_BD_control_parametros_0_0_control_parametros
      port map (
       bufferRx(7 downto 0) => bufferRx(7 downto 0),

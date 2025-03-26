@@ -27,4 +27,19 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GateKeeper_
 # IP: c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_clk_wiz_0_0/GateKeeper_BD_clk_wiz_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GateKeeper_BD_clk_wiz_0_0 || ORIG_REF_NAME==GateKeeper_BD_clk_wiz_0_0} -quiet] -quiet
 
+# IP: c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_processing_system7_0_0/GateKeeper_BD_processing_system7_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GateKeeper_BD_processing_system7_0_0 || ORIG_REF_NAME==GateKeeper_BD_processing_system7_0_0} -quiet] -quiet
+
+# IP: c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_axi_gpio_0_0/GateKeeper_BD_axi_gpio_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GateKeeper_BD_axi_gpio_0_0 || ORIG_REF_NAME==GateKeeper_BD_axi_gpio_0_0} -quiet] -quiet
+
+# IP: c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_ps7_0_axi_periph_0/GateKeeper_BD_ps7_0_axi_periph_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GateKeeper_BD_ps7_0_axi_periph_0 || ORIG_REF_NAME==GateKeeper_BD_ps7_0_axi_periph_0} -quiet] -quiet
+
+# IP: c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_rst_ps7_0_100M_0/GateKeeper_BD_rst_ps7_0_100M_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GateKeeper_BD_rst_ps7_0_100M_0 || ORIG_REF_NAME==GateKeeper_BD_rst_ps7_0_100M_0} -quiet] -quiet
+
+# IP: c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_auto_pc_0/GateKeeper_BD_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GateKeeper_BD_auto_pc_0 || ORIG_REF_NAME==GateKeeper_BD_auto_pc_0} -quiet] -quiet
+
 # XDC: C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/GateKeeper_BD_ooc.xdc

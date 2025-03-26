@@ -12,7 +12,7 @@
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source GateKeeper_BD_control_parametros_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 555.695 ; gain = 182.289
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 552.965 ; gain = 180.270
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
@@ -24,67 +24,67 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 6420
+INFO: [Synth 8-7075] Helper process launched with PID 14316
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1434.672 ; gain = 439.777
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1432.363 ; gain = 437.523
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-11241] undeclared symbol 'os_readyRx', assumed default net type 'wire' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:33]
+INFO: [Synth 8-11241] undeclared symbol 'os_readyRx', assumed default net type 'wire' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:34]
 INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_control_parametros_0_0' [c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_0/synth/GateKeeper_BD_control_parametros_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'control_parametros' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:21]
 INFO: [Synth 8-6157] synthesizing module 'OneShot' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/OneShot.v:21]
 INFO: [Synth 8-6155] done synthesizing module 'OneShot' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/OneShot.v:21]
 INFO: [Synth 8-6155] done synthesizing module 'control_parametros' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:21]
 INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_control_parametros_0_0' (0#1) [c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_0/synth/GateKeeper_BD_control_parametros_0_0.v:53]
-WARNING: [Synth 8-6014] Unused sequential element d8_reg was removed.  [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:64]
-WARNING: [Synth 8-6014] Unused sequential element d7_reg was removed.  [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:71]
-WARNING: [Synth 8-6014] Unused sequential element d6_reg was removed.  [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:78]
-WARNING: [Synth 8-6014] Unused sequential element d5_reg was removed.  [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:85]
-WARNING: [Synth 8-6014] Unused sequential element d4_reg was removed.  [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:92]
-WARNING: [Synth 8-6014] Unused sequential element d3_reg was removed.  [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:99]
+WARNING: [Synth 8-6014] Unused sequential element d8_reg was removed.  [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:65]
+WARNING: [Synth 8-6014] Unused sequential element d7_reg was removed.  [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:72]
+WARNING: [Synth 8-6014] Unused sequential element d6_reg was removed.  [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:79]
+WARNING: [Synth 8-6014] Unused sequential element d5_reg was removed.  [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:86]
+WARNING: [Synth 8-6014] Unused sequential element d4_reg was removed.  [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:93]
+WARNING: [Synth 8-6014] Unused sequential element d3_reg was removed.  [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v:100]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1542.684 ; gain = 547.789
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1543.758 ; gain = 548.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1542.684 ; gain = 547.789
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1543.758 ; gain = 548.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1542.684 ; gain = 547.789
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1543.758 ; gain = 548.918
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1542.684 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1543.758 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1595.824 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1562.258 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 The system cannot find the path specified.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 1595.824 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1562.289 ; gain = 0.031
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1562.289 ; gain = 567.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1562.289 ; gain = 567.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1562.289 ; gain = 567.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1562.289 ; gain = 567.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -116,26 +116,34 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design GateKeeper_BD_control_parametros_0_0 has port version[7] driven by constant 0
+INFO: [Synth 8-3917] design GateKeeper_BD_control_parametros_0_0 has port version[6] driven by constant 0
+INFO: [Synth 8-3917] design GateKeeper_BD_control_parametros_0_0 has port version[5] driven by constant 0
+INFO: [Synth 8-3917] design GateKeeper_BD_control_parametros_0_0 has port version[4] driven by constant 0
+INFO: [Synth 8-3917] design GateKeeper_BD_control_parametros_0_0 has port version[3] driven by constant 0
+INFO: [Synth 8-3917] design GateKeeper_BD_control_parametros_0_0 has port version[2] driven by constant 0
+INFO: [Synth 8-3917] design GateKeeper_BD_control_parametros_0_0 has port version[1] driven by constant 1
+INFO: [Synth 8-3917] design GateKeeper_BD_control_parametros_0_0 has port version[0] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1562.289 ; gain = 567.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1562.289 ; gain = 567.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1562.289 ; gain = 567.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1562.289 ; gain = 567.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -153,37 +161,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1562.289 ; gain = 567.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1562.289 ; gain = 567.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1562.289 ; gain = 567.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1562.289 ; gain = 567.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1562.289 ; gain = 567.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1562.289 ; gain = 567.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -207,30 +215,30 @@ Report Cell Usage:
 |6     |FDRE |    76|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1562.289 ; gain = 567.449
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:01:11 . Memory (MB): peak = 1595.824 ; gain = 547.789
-Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1595.824 ; gain = 600.930
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1562.289 ; gain = 548.918
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1562.289 ; gain = 567.449
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1595.824 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1562.289 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1595.824 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1571.832 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 The system cannot find the path specified.
-Synth Design complete | Checksum: 46823fd4
+Synth Design complete | Checksum: 44ac0e95
 INFO: [Common 17-83] Releasing license: Synthesis
-24 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+32 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:23 ; elapsed = 00:01:30 . Memory (MB): peak = 1595.824 ; gain = 1018.027
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1595.824 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1571.832 ; gain = 995.445
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1571.832 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/GateKeeper_BD_control_parametros_0_0_synth_1/GateKeeper_BD_control_parametros_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP GateKeeper_BD_control_parametros_0_0, cache-ID = 46b08f877c21d40a
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP GateKeeper_BD_control_parametros_0_0, cache-ID = b9f55a79b7052dd6
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1595.824 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1571.832 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/GateKeeper_BD_control_parametros_0_0_synth_1/GateKeeper_BD_control_parametros_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file GateKeeper_BD_control_parametros_0_0_utilization_synth.rpt -pb GateKeeper_BD_control_parametros_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 26 11:18:50 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 26 11:52:42 2025...

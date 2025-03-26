@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Wed Mar 26 11:20:55 2025
+| Date         : Wed Mar 26 11:58:01 2025
 | Host         : donaufeld running 64-bit major release  (build 9200)
 | Command      : report_methodology -file GateKeeper_BD_wrapper_methodology_drc_routed.rpt -pb GateKeeper_BD_wrapper_methodology_drc_routed.pb -rpx GateKeeper_BD_wrapper_methodology_drc_routed.rpx
 | Design       : GateKeeper_BD_wrapper
@@ -23,12 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 7
-+-----------+----------+-------------------------------+------------+
-| Rule      | Severity | Description                   | Violations |
-+-----------+----------+-------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay | 7          |
-+-----------+----------+-------------------------------+------------+
+             Violations found: 17
++-----------+----------+---------------------------------------------------+------------+
+| Rule      | Severity | Description                                       | Violations |
++-----------+----------+---------------------------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay                     | 12         |
+| XDCC-2    | Warning  | Scoped Non-Timing constraint/property overwritten | 5          |
++-----------+----------+---------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -39,32 +40,92 @@ Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An input delay is missing on det_in_0 relative to the rising and/or falling clock edge(s) of GCLK.
+An input delay is missing on btns_5bits_tri_i[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An input delay is missing on det_in_1 relative to the rising and/or falling clock edge(s) of GCLK.
+An input delay is missing on btns_5bits_tri_i[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An input delay is missing on det_in_2 relative to the rising and/or falling clock edge(s) of GCLK.
+An input delay is missing on btns_5bits_tri_i[2] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#5 Warning
 Missing input or output delay  
-An output delay is missing on det_out_0 relative to the rising and/or falling clock edge(s) of GCLK.
+An input delay is missing on btns_5bits_tri_i[3] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#6 Warning
 Missing input or output delay  
-An output delay is missing on det_out_1 relative to the rising and/or falling clock edge(s) of GCLK.
+An input delay is missing on btns_5bits_tri_i[4] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#7 Warning
 Missing input or output delay  
+An input delay is missing on det_in_0 relative to the rising and/or falling clock edge(s) of GCLK.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on det_in_1 relative to the rising and/or falling clock edge(s) of GCLK.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on det_in_2 relative to the rising and/or falling clock edge(s) of GCLK.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on det_out_0 relative to the rising and/or falling clock edge(s) of GCLK.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on det_out_1 relative to the rising and/or falling clock edge(s) of GCLK.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
 An output delay is missing on det_out_2 relative to the rising and/or falling clock edge(s) of GCLK.
+Related violations: <none>
+
+XDCC-2#1 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on btns_5bits_tri_i[0] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/Zedboard-Master.xdc (Line: 367)
+Previous Source: c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_axi_gpio_0_0/GateKeeper_BD_axi_gpio_0_0_board.xdc (Line: 3)
+Related violations: <none>
+
+XDCC-2#2 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on btns_5bits_tri_i[1] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/Zedboard-Master.xdc (Line: 367)
+Previous Source: c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_axi_gpio_0_0/GateKeeper_BD_axi_gpio_0_0_board.xdc (Line: 5)
+Related violations: <none>
+
+XDCC-2#3 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on btns_5bits_tri_i[2] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/Zedboard-Master.xdc (Line: 367)
+Previous Source: c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_axi_gpio_0_0/GateKeeper_BD_axi_gpio_0_0_board.xdc (Line: 7)
+Related violations: <none>
+
+XDCC-2#4 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on btns_5bits_tri_i[3] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/Zedboard-Master.xdc (Line: 367)
+Previous Source: c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_axi_gpio_0_0/GateKeeper_BD_axi_gpio_0_0_board.xdc (Line: 9)
+Related violations: <none>
+
+XDCC-2#5 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on btns_5bits_tri_i[4] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/Zedboard-Master.xdc (Line: 367)
+Previous Source: c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_axi_gpio_0_0/GateKeeper_BD_axi_gpio_0_0_board.xdc (Line: 11)
 Related violations: <none>
 
 
