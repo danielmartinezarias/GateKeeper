@@ -1,106 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1742918674">
-  <File Type="ROUTE-PWR" Name="top_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="top.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="top_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
-  <File Type="OPT-RQA-PB" Name="top_rqa_opted.pb"/>
-  <File Type="BITSTR-MMI" Name="top.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="top_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="top_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="top_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="top_opt.dcp"/>
-  <File Type="OPT-DRC" Name="top_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="top.hwdef"/>
-  <File Type="PWROPT-DCP" Name="top_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="top_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="top_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="top_placed.dcp"/>
-  <File Type="PLACE-IO" Name="top_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="top_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="top_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="top_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="top_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="top_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="top_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="top.bin"/>
-  <File Type="PLACE-TIMING" Name="top_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="top_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="top_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="top_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="top.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="top_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="top_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="top_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="top.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="top_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="top_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="top_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="top_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="top_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="top_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="top_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="top_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="top_rqs_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="top_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="top_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="top_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="top_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="top_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="top_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="top_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="top_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="top_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="top_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_postroute_physopt_bb.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1742984197">
+  <File Type="ROUTE-PWR" Name="GateKeeper_BD_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="GateKeeper_BD_wrapper.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="GateKeeper_BD_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="GateKeeper_BD_wrapper_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="GateKeeper_BD_wrapper_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="GateKeeper_BD_wrapper.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="GateKeeper_BD_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="GateKeeper_BD_wrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="GateKeeper_BD_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="GateKeeper_BD_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="GateKeeper_BD_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="GateKeeper_BD_wrapper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="GateKeeper_BD_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="GateKeeper_BD_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="GateKeeper_BD_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="GateKeeper_BD_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="GateKeeper_BD_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="GateKeeper_BD_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="GateKeeper_BD_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="GateKeeper_BD_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="GateKeeper_BD_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="GateKeeper_BD_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="GateKeeper_BD_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="GateKeeper_BD_wrapper.bin"/>
+  <File Type="PLACE-TIMING" Name="GateKeeper_BD_wrapper_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="GateKeeper_BD_wrapper_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="GateKeeper_BD_wrapper_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="GateKeeper_BD_wrapper_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="GateKeeper_BD_wrapper.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="GateKeeper_BD_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="GateKeeper_BD_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="GateKeeper_BD_wrapper_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="GateKeeper_BD_wrapper.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="GateKeeper_BD_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="GateKeeper_BD_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="GateKeeper_BD_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="GateKeeper_BD_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="GateKeeper_BD_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="GateKeeper_BD_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="GateKeeper_BD_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="GateKeeper_BD_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="GateKeeper_BD_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="GateKeeper_BD_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="GateKeeper_BD_wrapper_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="GateKeeper_BD_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="GateKeeper_BD_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="GateKeeper_BD_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="GateKeeper_BD_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="GateKeeper_BD_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="GateKeeper_BD_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="GateKeeper_BD_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="GateKeeper_BD_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="GateKeeper_BD_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="GateKeeper_BD_wrapper_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="GateKeeper_BD_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="GateKeeper_BD_wrapper_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="top_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="top_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="top_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="top_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="top.bit"/>
+  <File Type="BG-BIT" Name="GateKeeper_BD_wrapper.bit"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="top_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="top_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="top.nky"/>
-  <File Type="BITSTR-BMM" Name="top_bd.bmm"/>
-  <File Type="PDI-FILE" Name="top.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="top_boot.pdi"/>
-  <File Type="PL-PDI-FILE" Name="top_pld.pdi"/>
-  <File Type="RCFI_FILE" Name="top.rcfi"/>
-  <File Type="CFI_FILE" Name="top.cfi"/>
-  <File Type="RNPI_FILE" Name="top.rnpi"/>
-  <File Type="NPI_FILE" Name="top.npi"/>
-  <File Type="RBD_FILE" Name="top.rbd"/>
+  <File Type="BITSTR-NKY" Name="GateKeeper_BD_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="GateKeeper_BD_wrapper_bd.bmm"/>
+  <File Type="PDI-FILE" Name="GateKeeper_BD_wrapper.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="GateKeeper_BD_wrapper_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="GateKeeper_BD_wrapper_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="GateKeeper_BD_wrapper.rcfi"/>
+  <File Type="CFI_FILE" Name="GateKeeper_BD_wrapper.cfi"/>
+  <File Type="RNPI_FILE" Name="GateKeeper_BD_wrapper.rnpi"/>
+  <File Type="NPI_FILE" Name="GateKeeper_BD_wrapper.npi"/>
+  <File Type="RBD_FILE" Name="GateKeeper_BD_wrapper.rbd"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="top.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="top.sysdef"/>
-  <File Type="BG-BGN" Name="top.bgn"/>
-  <File Type="BG-DRC" Name="top.drc"/>
-  <File Type="RDI-RDI" Name="top.vdi"/>
+  <File Type="BITSTR-LTX" Name="GateKeeper_BD_wrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="GateKeeper_BD_wrapper.sysdef"/>
+  <File Type="BG-BGN" Name="GateKeeper_BD_wrapper.bgn"/>
+  <File Type="BG-DRC" Name="GateKeeper_BD_wrapper.drc"/>
+  <File Type="RDI-RDI" Name="GateKeeper_BD_wrapper.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="ROUTE-RQS" Name="top_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="top_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="GateKeeper_BD_wrapper_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="GateKeeper_BD_wrapper_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/srcs/GateKeeper.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/srcs/OneShot.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/srcs/UART_Rx.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -114,7 +100,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/srcs/pulseShaper.v">
+    <File Path="$PPRDIR/srcs/GateKeeper.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -128,8 +114,38 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/srcs/UART_Rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/BD/GateKeeper_BD/GateKeeper_BD.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/BD/GateKeeper_BD/hdl/GateKeeper_BD_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/srcs/top.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/srcs/pulseShaper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -137,7 +153,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopModule" Val="GateKeeper_BD_wrapper"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -167,9 +183,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -182,5 +196,11 @@
       <Option Id="BinFile">1</Option>
     </Step>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_GateKeeper_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_tick_generator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_UART_Rx_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_GateKeeper_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_GateKeeper_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_control_parametros_0_0"/>
 </GenRun>

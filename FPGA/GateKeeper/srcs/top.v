@@ -25,7 +25,7 @@ module top(
     input GCLK,
     //UART
     input JA10,
-    output JA9,
+    //output JA9,
     //input signals
     input [2:0] det_in,
     //output signals
@@ -42,8 +42,9 @@ module top(
     wire clk_400MHz;
     //uart TTL-232R
     wire tick;
-    wire uart_tx_in,uart_rx_out;
-    assign JA9  = uart_rx_out;
+    wire uart_tx_in;
+    // wire uart_rx_out;
+    //assign JA9  = uart_rx_out;
     assign uart_tx_in = JA10;
 
     //parameters

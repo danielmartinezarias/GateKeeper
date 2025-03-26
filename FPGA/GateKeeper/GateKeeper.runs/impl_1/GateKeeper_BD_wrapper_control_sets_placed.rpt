@@ -1,0 +1,99 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Mar 26 11:20:27 2025
+| Host         : donaufeld running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file GateKeeper_BD_wrapper_control_sets_placed.rpt
+| Design       : GateKeeper_BD_wrapper
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    21 |
+|    Minimum number of control sets                        |    21 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    18 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    21 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |    11 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              26 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               5 |            1 |
+| Yes          | No                    | No                     |             135 |           43 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              32 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+------------------------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+|                Clock Signal                |                              Enable Signal                             |                     Set/Reset Signal                     | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------------------+------------------------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_100MHz | GateKeeper_BD_i/UART_Rx_0/inst/o1/E[0]                                 |                                                          |                1 |              4 |         4.00 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_100MHz |                                                                        | GateKeeper_BD_i/tick_generator_0/inst/tick0_n_0          |                1 |              5 |         5.00 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_100MHz | GateKeeper_BD_i/UART_Rx_0/inst/o1/trigger_reg_2[0]                     |                                                          |                2 |              5 |         2.50 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_400MHz |                                                                        |                                                          |                3 |              6 |         2.00 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_100MHz | GateKeeper_BD_i/UART_Rx_0/inst/o1/trigger_reg_0[0]                     |                                                          |                2 |              6 |         3.00 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_400MHz | GateKeeper_BD_i/GateKeeper_0/inst/c2[7]_i_2_n_0                        | GateKeeper_BD_i/GateKeeper_0/inst/c2[7]_i_1_n_0          |                3 |              8 |         2.67 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_400MHz | GateKeeper_BD_i/GateKeeper_1/inst/c2[7]_i_2_n_0                        | GateKeeper_BD_i/GateKeeper_1/inst/c2[7]_i_1_n_0          |                2 |              8 |         4.00 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_400MHz | GateKeeper_BD_i/GateKeeper_2/inst/c2[7]_i_2_n_0                        | GateKeeper_BD_i/GateKeeper_2/inst/c2[7]_i_1_n_0          |                2 |              8 |         4.00 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_100MHz | GateKeeper_BD_i/control_parametros_0/inst/o1/E[1]                      |                                                          |                3 |              8 |         2.67 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_100MHz | GateKeeper_BD_i/control_parametros_0/inst/o1/ctrl_reg[4]_0             |                                                          |                5 |              8 |         1.60 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_100MHz | GateKeeper_BD_i/control_parametros_0/inst/o1/ctrl_reg[4]_0             | GateKeeper_BD_i/control_parametros_0/inst/o1/ctrl_reg[4] |                3 |              8 |         2.67 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_100MHz | GateKeeper_BD_i/control_parametros_0/inst/o1/ctrl_reg[0][0]            |                                                          |                3 |              8 |         2.67 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_100MHz | GateKeeper_BD_i/control_parametros_0/inst/o1/E[0]                      |                                                          |                5 |              8 |         1.60 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_100MHz | GateKeeper_BD_i/control_parametros_0/inst/o1/trigger_reg_0[0]          |                                                          |                2 |              8 |         4.00 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_100MHz | GateKeeper_BD_i/UART_Rx_0/inst/o1/trigger_reg_1[0]                     |                                                          |                2 |              8 |         4.00 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_100MHz | GateKeeper_BD_i/control_parametros_0/inst/pulseShaper_width[7]_i_1_n_0 |                                                          |                2 |              8 |         4.00 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_400MHz | GateKeeper_BD_i/GateKeeper_0/inst/c[0]_i_1_n_0                         |                                                          |                4 |             16 |         4.00 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_400MHz | GateKeeper_BD_i/GateKeeper_1/inst/c[0]_i_1_n_0                         |                                                          |                4 |             16 |         4.00 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_400MHz | GateKeeper_BD_i/GateKeeper_2/inst/c[0]_i_1_n_0                         |                                                          |                4 |             16 |         4.00 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_100MHz | GateKeeper_BD_i/control_parametros_0/inst/window[15]_i_1_n_0           |                                                          |                4 |             16 |         4.00 |
+|  GateKeeper_BD_i/clk_wiz_0/inst/clk_100MHz |                                                                        |                                                          |                6 |             20 |         3.33 |
++--------------------------------------------+------------------------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+
+
