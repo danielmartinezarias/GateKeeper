@@ -1,0 +1,54 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "tcf-debug",
+      "request": "launch",
+      "name": "zynq_fsbl_app_hw_1",
+      "debugType": "baremetal-zynq",
+      "attachToRunningTargetOptions": {
+        "targetSetupMode": "standalone",
+        "executeScript": true,
+        "scriptPath": ""
+      },
+      "autoAttachProcessChildren": false,
+      "target": {
+        "targetConnectionId": "Local",
+        "peersIniPath": "../../../.peers.ini",
+        "context": "zynq"
+      },
+      "targetSetup": {
+        "resetSystem": true,
+        "programDevice": true,
+        "resetAPU": false,
+        "bitstreamFile": "${workspaceFolder}\\zynq_fsbl\\_ide\\bitstream\\GateKeeper_BD_wrapper.bit",
+        "zynqInitialization": {
+          "isFsbl": false,
+          "usingFSBL": {
+            "initWithFSBL": true,
+            "fsblFile": "${workspaceFolder}\\GateKeeperVitis\\export\\GateKeeperVitis\\sw\\boot\\fsbl.elf",
+            "fsblExitSymbol": "FsblHandoffJtagExit"
+          },
+          "usingPs7Init": {
+            "runPs7Init": true,
+            "runPs7PostInit": true,
+            "ps7InitTclFile": "${workspaceFolder}\\zynq_fsbl\\_ide\\psinit\\ps7_init.tcl"
+          }
+        },
+        "downloadElf": [
+          {
+            "core": "ps7_cortexa9_1",
+            "resetProcessor": true,
+            "elfFile": "${workspaceFolder}\\zynq_fsbl\\build\\zynq_fsbl.elf",
+            "stopAtEntry": false
+          }
+        ],
+        "crossTriggerBreakpoints": {
+          "isSelected": false,
+          "breakpoints": []
+        }
+      },
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ]
+}

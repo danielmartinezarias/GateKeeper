@@ -8,25 +8,32 @@
   <device name="xc7z020_1" gui_info=""/>
   <ObjectList object_type="hw_cfgmem" gui_info="">
     <Object name="" gui_info="">
-      <Properties Property="PROGRAM.ADDRESS_RANGE" value="use_file"/>
+      <Properties Property="PROGRAM.ADDRESS_RANGE" value="entire_device"/>
       <Properties Property="PROGRAM.BIN_OFFSET" value="0"/>
       <Properties Property="PROGRAM.BLANK_CHECK" value="0"/>
       <Properties Property="PROGRAM.CFG_PROGRAM" value="1"/>
       <Properties Property="PROGRAM.CHECKSUM" value="0"/>
       <Properties Property="PROGRAM.ERASE" value="1"/>
-      <Properties Property="PROGRAM.FILES" value="$_project_name_.runs/impl_1/top.bin"/>
+      <Properties Property="PROGRAM.FILES" value="$_project_name_.runs/impl_1/$_project_name__BD_wrapper.bin"/>
       <Properties Property="PROGRAM.VERIFY" value="1"/>
-      <Properties Property="PROGRAM.ZYNQ_FSBL" value="C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/u-boot.elf"/>
+      <Properties Property="PROGRAM.ZYNQ_FSBL" value="C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/vitis/zynq_fsbl/build/zynq_fsbl.elf"/>
     </Object>
   </ObjectList>
   <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7z020_0" gui_info="">
+      <Properties Property="PROGRAM.HW_BITSTREAM" value=""/>
+      <Properties Property="PROGRAM.HW_CFGMEM_PART" value="s25fl256s-3.3v-qspi-x4-single"/>
+    </Object>
     <Object name="xc7z020_1" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value=""/>
       <Properties Property="PROBES.FILE" value=""/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/$_project_name__BD_wrapper.bit"/>
-      <Properties Property="PROGRAM.HW_CFGMEM_PART" value="s25fl256s-3.3v-qspi-x1-single"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value=""/>
+      <Properties Property="PROGRAM.HW_CFGMEM_PART" value="s25fl256s-3.3v-qspi-x4-single"/>
       <Properties Property="SLR.COUNT" value="1"/>
     </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_sysmon" gui_info="">
+    <Object name="XADC" gui_info="dashboard_1=[TEMPERATURE=-65281;SCAN_RATE=1000;TRACK_TIME=1;]"/>
   </ObjectList>
   <probeset name="hw project" active="false"/>
 </hwsession>

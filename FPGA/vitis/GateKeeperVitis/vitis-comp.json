@@ -1,0 +1,70 @@
+{
+  "name": "GateKeeperVitis",
+  "type": "PLATFORM",
+  "configuration": {
+    "description": "",
+    "xsa": "C:\\Users\\danie\\Documents\\GitHub\\GateKeeper\\FPGA\\GateKeeper\\GateKeeper_BD_wrapper.xsa",
+    "xsaPathInPlatform": "GateKeeperVitis\\hw\\GateKeeper_BD_wrapper.xsa",
+    "emulationXsa": "",
+    "emulationXsaPathInPlatform": "",
+    "isCustomFSBL": false,
+    "fsblPath": "",
+    "pmufwElf": "",
+    "flow": "EMBEDDED",
+    "processorsMap": {
+      "ps7_cortexa9_0": "ps7_cortexa9",
+      "ps7_cortexa9_1": "ps7_cortexa9"
+    },
+    "supportedFamily": "zynq",
+    "outOfSync": false,
+    "componentType": "PLATFORM",
+    "domains": [
+      {
+        "name": "zynq_fsbl",
+        "displayName": "zynq_fsbl",
+        "processor": "ps7_cortexa9_0",
+        "cpuType": "cortex-a9",
+        "cpuInstance": "ps7_cortexa9_0",
+        "os": "standalone",
+        "appTemplate": "zynq_fsbl",
+        "isBootDomain": true,
+        "qemuData": "C:\\Users\\danie\\Documents\\GitHub\\GateKeeper\\FPGA\\vitis\\GateKeeperVitis\\resources\\zynq_fsbl\\qemu",
+        "qemuArgsFile": "C:\\Users\\danie\\Documents\\GitHub\\GateKeeper\\FPGA\\vitis\\GateKeeperVitis\\resources\\zynq_fsbl\\qemu\\qemu_args.txt",
+        "pmcQemuArgsFile": "",
+        "isBSPGenReq": false
+      },
+      {
+        "name": "standalone_ps7_cortexa9_0",
+        "displayName": "standalone_ps7_cortexa9_0",
+        "processor": "ps7_cortexa9_0",
+        "cpuType": "cortex-a9",
+        "cpuInstance": "ps7_cortexa9_0",
+        "os": "standalone",
+        "appTemplate": "empty_application",
+        "isBootDomain": false,
+        "qemuData": "C:\\Users\\danie\\Documents\\GitHub\\GateKeeper\\FPGA\\vitis\\GateKeeperVitis\\resources\\standalone_ps7_cortexa9_0\\qemu",
+        "qemuArgsFile": "C:\\Users\\danie\\Documents\\GitHub\\GateKeeper\\FPGA\\vitis\\GateKeeperVitis\\resources\\standalone_ps7_cortexa9_0\\qemu\\qemu_args.txt",
+        "pmcQemuArgsFile": "",
+        "isBSPGenReq": false
+      },
+      {
+        "name": "GateKeeperFSBL",
+        "displayName": "GateKeeperFSBL",
+        "processor": "ps7_cortexa9_1",
+        "cpuType": "cortex-a9",
+        "cpuInstance": "ps7_cortexa9_1",
+        "os": "standalone",
+        "appTemplate": "zynq_fsbl",
+        "isBootDomain": false,
+        "qemuData": "C:\\Users\\danie\\Documents\\GitHub\\GateKeeper\\FPGA\\vitis\\GateKeeperVitis\\resources\\GateKeeperFSBL\\qemu",
+        "qemuArgsFile": "C:\\Users\\danie\\Documents\\GitHub\\GateKeeper\\FPGA\\vitis\\GateKeeperVitis\\resources\\GateKeeperFSBL\\qemu\\qemu_args.txt",
+        "pmcQemuArgsFile": "",
+        "isBSPGenReq": false
+      }
+    ],
+    "emptyToolchainConfiguration": []
+  },
+  "previousBuildStatusMap": {
+    "export": "SUCCESS"
+  }
+}

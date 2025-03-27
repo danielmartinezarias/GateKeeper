@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader] /home/kasm-user/petalinux_images/GateKeeper/GateKeeper/images/linux/zynq_fsbl.elf
+	/home/kasm-user/petalinux_images/GateKeeper/GateKeeper/images/linux/u-boot.elf
+	[load=0x00100000] /home/kasm-user/petalinux_images/GateKeeper/GateKeeper/images/linux/system.dtb
+}
