@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Fri Mar 28 13:22:01 2025
+// Date        : Fri Mar 28 13:22:00 2025
 // Host        : donaufeld running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_clk_wiz_0_0/GateKeeper_BD_clk_wiz_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+//               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ GateKeeper_BD_clk_wiz_0_0_sim_netlist.v
 // Design      : GateKeeper_BD_clk_wiz_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,7 +14,7 @@
 `timescale 1 ps / 1 ps
 
 (* NotValidForBitStream *)
-module GateKeeper_BD_clk_wiz_0_0
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
    (clk_100MHz,
     clk_400MHz,
     clk_in1);
@@ -26,13 +26,13 @@ module GateKeeper_BD_clk_wiz_0_0
   wire clk_400MHz;
   (* IBUF_LOW_PWR *) wire clk_in1;
 
-  GateKeeper_BD_clk_wiz_0_0_clk_wiz inst
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GateKeeper_BD_clk_wiz_0_0_clk_wiz inst
        (.clk_100MHz(clk_100MHz),
         .clk_400MHz(clk_400MHz),
         .clk_in1(clk_in1));
 endmodule
 
-module GateKeeper_BD_clk_wiz_0_0_clk_wiz
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_GateKeeper_BD_clk_wiz_0_0_clk_wiz
    (clk_100MHz,
     clk_400MHz,
     clk_in1);

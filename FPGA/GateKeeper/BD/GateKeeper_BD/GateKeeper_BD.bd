@@ -669,19 +669,19 @@
             "value": "BUFG"
           },
           "CLKOUT1_JITTER": {
-            "value": "115.831"
+            "value": "144.719"
           },
           "CLKOUT1_PHASE_ERROR": {
-            "value": "87.180"
+            "value": "114.212"
           },
           "CLKOUT2_DRIVES": {
             "value": "BUFG"
           },
           "CLKOUT2_JITTER": {
-            "value": "90.074"
+            "value": "111.164"
           },
           "CLKOUT2_PHASE_ERROR": {
-            "value": "87.180"
+            "value": "114.212"
           },
           "CLKOUT2_REQUESTED_OUT_FREQ": {
             "value": "400.000"
@@ -710,6 +710,9 @@
           "CLK_OUT2_PORT": {
             "value": "clk_400MHz"
           },
+          "FEEDBACK_SOURCE": {
+            "value": "FDBK_AUTO"
+          },
           "JITTER_SEL": {
             "value": "Min_O_Jitter"
           },
@@ -717,13 +720,13 @@
             "value": "HIGH"
           },
           "MMCM_CLKFBOUT_MULT_F": {
-            "value": "12"
+            "value": "8.000"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "12"
+            "value": "8.000"
           },
           "MMCM_CLKOUT1_DIVIDE": {
-            "value": "3"
+            "value": "2"
           },
           "MMCM_COMPENSATION": {
             "value": "ZHOLD"
@@ -732,7 +735,7 @@
             "value": "2"
           },
           "PRIMITIVE": {
-            "value": "PLL"
+            "value": "MMCM"
           },
           "USE_LOCKED": {
             "value": "false"
