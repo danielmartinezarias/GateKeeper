@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Wed Mar 26 11:52:42 2025
+// Date        : Fri Mar 28 12:07:48 2025
 // Host        : donaufeld running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_0/GateKeeper_BD_control_parametros_0_0_sim_netlist.v
@@ -20,20 +20,23 @@ module GateKeeper_BD_control_parametros_0_0
    (clk,
     readyRx,
     bufferRx,
-    version,
+    SW,
+    LED,
     window,
     pulseShaper_width,
     enableGateKeeper);
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk;
   input readyRx;
   input [7:0]bufferRx;
-  output [7:0]version;
+  input [7:0]SW;
+  output [7:0]LED;
   output [15:0]window;
   output [7:0]pulseShaper_width;
   output enableGateKeeper;
 
   wire \<const0> ;
-  wire \<const1> ;
+  wire [7:3]\^LED ;
+  wire [7:0]SW;
   wire [7:0]bufferRx;
   wire clk;
   wire enableGateKeeper;
@@ -41,20 +44,16 @@ module GateKeeper_BD_control_parametros_0_0
   wire readyRx;
   wire [15:0]window;
 
-  assign version[7] = \<const0> ;
-  assign version[6] = \<const0> ;
-  assign version[5] = \<const0> ;
-  assign version[4] = \<const0> ;
-  assign version[3] = \<const0> ;
-  assign version[2] = \<const0> ;
-  assign version[1] = \<const1> ;
-  assign version[0] = \<const1> ;
+  assign LED[7:3] = \^LED [7:3];
+  assign LED[2] = SW[0];
+  assign LED[1] = \<const0> ;
+  assign LED[0] = \<const0> ;
   GND GND
        (.G(\<const0> ));
-  VCC VCC
-       (.P(\<const1> ));
   GateKeeper_BD_control_parametros_0_0_control_parametros inst
-       (.bufferRx(bufferRx),
+       (.LED(\^LED ),
+        .SW(SW[0]),
+        .bufferRx(bufferRx),
         .clk(clk),
         .enableGateKeeper(enableGateKeeper),
         .pulseShaper_width(pulseShaper_width),
@@ -217,18 +216,24 @@ endmodule
 (* ORIG_REF_NAME = "control_parametros" *) 
 module GateKeeper_BD_control_parametros_0_0_control_parametros
    (window,
+    LED,
     pulseShaper_width,
     enableGateKeeper,
     clk,
     readyRx,
-    bufferRx);
+    bufferRx,
+    SW);
   output [15:0]window;
+  output [4:0]LED;
   output [7:0]pulseShaper_width;
   output enableGateKeeper;
   input clk;
   input readyRx;
   input [7:0]bufferRx;
+  input [0:0]SW;
 
+  wire [4:0]LED;
+  wire [0:0]SW;
   wire [7:0]bufferRx;
   wire clk;
   wire [15:0]ctrl;
@@ -270,6 +275,40 @@ module GateKeeper_BD_control_parametros_0_0_control_parametros
   wire \window[15]_i_1_n_0 ;
   wire \window[15]_i_2_n_0 ;
 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \LED[3]_INST_0 
+       (.I0(SW),
+        .I1(window[0]),
+        .O(LED[0]));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \LED[4]_INST_0 
+       (.I0(SW),
+        .I1(window[1]),
+        .O(LED[1]));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \LED[5]_INST_0 
+       (.I0(SW),
+        .I1(window[2]),
+        .O(LED[2]));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \LED[6]_INST_0 
+       (.I0(SW),
+        .I1(window[3]),
+        .O(LED[3]));
+  LUT2 #(
+    .INIT(4'h8)) 
+    \LED[7]_INST_0 
+       (.I0(SW),
+        .I1(window[4]),
+        .O(LED[4]));
   LUT6 #(
     .INIT(64'h000000FF00000010)) 
     \ctrl[0]_i_1 

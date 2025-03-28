@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Wed Mar 26 11:58:01 2025
+| Date         : Fri Mar 28 12:25:03 2025
 | Host         : donaufeld running 64-bit major release  (build 9200)
 | Command      : report_methodology -file GateKeeper_BD_wrapper_methodology_drc_routed.rpt -pb GateKeeper_BD_wrapper_methodology_drc_routed.pb -rpx GateKeeper_BD_wrapper_methodology_drc_routed.rpx
 | Design       : GateKeeper_BD_wrapper
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 17
+             Violations found: 25
 +-----------+----------+---------------------------------------------------+------------+
 | Rule      | Severity | Description                                       | Violations |
 +-----------+----------+---------------------------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay                     | 12         |
+| TIMING-18 | Warning  | Missing input or output delay                     | 20         |
 | XDCC-2    | Warning  | Scoped Non-Timing constraint/property overwritten | 5          |
 +-----------+----------+---------------------------------------------------+------------+
 
@@ -80,15 +80,55 @@ Related violations: <none>
 
 TIMING-18#10 Warning
 Missing input or output delay  
-An output delay is missing on det_out_0 relative to the rising and/or falling clock edge(s) of GCLK.
+An output delay is missing on LED[0] relative to the rising and/or falling clock edge(s) of GCLK.
 Related violations: <none>
 
 TIMING-18#11 Warning
 Missing input or output delay  
-An output delay is missing on det_out_1 relative to the rising and/or falling clock edge(s) of GCLK.
+An output delay is missing on LED[1] relative to the rising and/or falling clock edge(s) of GCLK.
 Related violations: <none>
 
 TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on LED[2] relative to the rising and/or falling clock edge(s) of GCLK.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on LED[3] relative to the rising and/or falling clock edge(s) of GCLK.
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on LED[4] relative to the rising and/or falling clock edge(s) of GCLK.
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on LED[5] relative to the rising and/or falling clock edge(s) of GCLK.
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on LED[6] relative to the rising and/or falling clock edge(s) of GCLK.
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on LED[7] relative to the rising and/or falling clock edge(s) of GCLK.
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on det_out_0 relative to the rising and/or falling clock edge(s) of GCLK.
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on det_out_1 relative to the rising and/or falling clock edge(s) of GCLK.
+Related violations: <none>
+
+TIMING-18#20 Warning
 Missing input or output delay  
 An output delay is missing on det_out_2 relative to the rising and/or falling clock edge(s) of GCLK.
 Related violations: <none>

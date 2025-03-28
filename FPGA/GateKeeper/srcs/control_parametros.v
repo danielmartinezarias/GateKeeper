@@ -22,7 +22,8 @@ module control_parametros(
    input clk,
 	input readyRx,
 	input [7:0] bufferRx,
-	output reg [7:0] version = 8'd3,
+	input [7:0] SW,
+	output wire [7:0] LED, 
 	output reg [15:0] window = 16'd6,
 	output reg [7:0] pulseShaper_width = 8'd20,
 	output reg enableGateKeeper = 1'b0
@@ -47,7 +48,9 @@ reg [15:0] orden = 0;
 reg [31:0] counter = 32'd0;
 
 
+reg [7:0] version = 8'd4;
 
+assign LED = (SW[0]) ? {window[4:0],version[2:0]}:8'd0;
 
 
 

@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Wed Mar 26 11:52:42 2025
+-- Date        : Fri Mar 28 12:07:48 2025
 -- Host        : donaufeld running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_0/GateKeeper_BD_control_parametros_0_0_sim_netlist.vhdl
@@ -183,11 +183,13 @@ use UNISIM.VCOMPONENTS.ALL;
 entity GateKeeper_BD_control_parametros_0_0_control_parametros is
   port (
     window : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    LED : out STD_LOGIC_VECTOR ( 4 downto 0 );
     pulseShaper_width : out STD_LOGIC_VECTOR ( 7 downto 0 );
     enableGateKeeper : out STD_LOGIC;
     clk : in STD_LOGIC;
     readyRx : in STD_LOGIC;
-    bufferRx : in STD_LOGIC_VECTOR ( 7 downto 0 )
+    bufferRx : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    SW : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of GateKeeper_BD_control_parametros_0_0_control_parametros : entity is "control_parametros";
@@ -227,9 +229,14 @@ architecture STRUCTURE of GateKeeper_BD_control_parametros_0_0_control_parametro
   signal p_0_in : STD_LOGIC_VECTOR ( 8 downto 5 );
   signal p_1_in : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \pulseShaper_width[7]_i_1_n_0\ : STD_LOGIC;
+  signal \^window\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \window[15]_i_1_n_0\ : STD_LOGIC;
   signal \window[15]_i_2_n_0\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of \LED[3]_INST_0\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \LED[4]_INST_0\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \LED[5]_INST_0\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \LED[6]_INST_0\ : label is "soft_lutpair5";
   attribute SOFT_HLUTNM of \ctrl[0]_i_2\ : label is "soft_lutpair3";
   attribute SOFT_HLUTNM of \ctrl[2]_i_2\ : label is "soft_lutpair2";
   attribute SOFT_HLUTNM of \ctrl[7]_i_5\ : label is "soft_lutpair1";
@@ -240,6 +247,52 @@ architecture STRUCTURE of GateKeeper_BD_control_parametros_0_0_control_parametro
   attribute SOFT_HLUTNM of \orden[15]_i_2\ : label is "soft_lutpair3";
 begin
   enableGateKeeper <= \^enablegatekeeper\;
+  window(15 downto 0) <= \^window\(15 downto 0);
+\LED[3]_INST_0\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"8"
+    )
+        port map (
+      I0 => SW(0),
+      I1 => \^window\(0),
+      O => LED(0)
+    );
+\LED[4]_INST_0\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"8"
+    )
+        port map (
+      I0 => SW(0),
+      I1 => \^window\(1),
+      O => LED(1)
+    );
+\LED[5]_INST_0\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"8"
+    )
+        port map (
+      I0 => SW(0),
+      I1 => \^window\(2),
+      O => LED(2)
+    );
+\LED[6]_INST_0\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"8"
+    )
+        port map (
+      I0 => SW(0),
+      I1 => \^window\(3),
+      O => LED(3)
+    );
+\LED[7]_INST_0\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"8"
+    )
+        port map (
+      I0 => SW(0),
+      I1 => \^window\(4),
+      O => LED(4)
+    );
 \ctrl[0]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"000000FF00000010"
@@ -1198,7 +1251,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(0),
-      Q => window(0),
+      Q => \^window\(0),
       R => '0'
     );
 \window_reg[10]\: unisim.vcomponents.FDRE
@@ -1209,7 +1262,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(10),
-      Q => window(10),
+      Q => \^window\(10),
       R => '0'
     );
 \window_reg[11]\: unisim.vcomponents.FDRE
@@ -1220,7 +1273,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(11),
-      Q => window(11),
+      Q => \^window\(11),
       R => '0'
     );
 \window_reg[12]\: unisim.vcomponents.FDRE
@@ -1231,7 +1284,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(12),
-      Q => window(12),
+      Q => \^window\(12),
       R => '0'
     );
 \window_reg[13]\: unisim.vcomponents.FDRE
@@ -1242,7 +1295,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(13),
-      Q => window(13),
+      Q => \^window\(13),
       R => '0'
     );
 \window_reg[14]\: unisim.vcomponents.FDRE
@@ -1253,7 +1306,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(14),
-      Q => window(14),
+      Q => \^window\(14),
       R => '0'
     );
 \window_reg[15]\: unisim.vcomponents.FDRE
@@ -1264,7 +1317,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(15),
-      Q => window(15),
+      Q => \^window\(15),
       R => '0'
     );
 \window_reg[1]\: unisim.vcomponents.FDRE
@@ -1275,7 +1328,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(1),
-      Q => window(1),
+      Q => \^window\(1),
       R => '0'
     );
 \window_reg[2]\: unisim.vcomponents.FDRE
@@ -1286,7 +1339,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(2),
-      Q => window(2),
+      Q => \^window\(2),
       R => '0'
     );
 \window_reg[3]\: unisim.vcomponents.FDRE
@@ -1297,7 +1350,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(3),
-      Q => window(3),
+      Q => \^window\(3),
       R => '0'
     );
 \window_reg[4]\: unisim.vcomponents.FDRE
@@ -1308,7 +1361,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(4),
-      Q => window(4),
+      Q => \^window\(4),
       R => '0'
     );
 \window_reg[5]\: unisim.vcomponents.FDRE
@@ -1319,7 +1372,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(5),
-      Q => window(5),
+      Q => \^window\(5),
       R => '0'
     );
 \window_reg[6]\: unisim.vcomponents.FDRE
@@ -1330,7 +1383,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(6),
-      Q => window(6),
+      Q => \^window\(6),
       R => '0'
     );
 \window_reg[7]\: unisim.vcomponents.FDRE
@@ -1341,7 +1394,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(7),
-      Q => window(7),
+      Q => \^window\(7),
       R => '0'
     );
 \window_reg[8]\: unisim.vcomponents.FDRE
@@ -1352,7 +1405,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(8),
-      Q => window(8),
+      Q => \^window\(8),
       R => '0'
     );
 \window_reg[9]\: unisim.vcomponents.FDRE
@@ -1363,7 +1416,7 @@ o1: entity work.GateKeeper_BD_control_parametros_0_0_OneShot
       C => clk,
       CE => \window[15]_i_1_n_0\,
       D => p_1_in(9),
-      Q => window(9),
+      Q => \^window\(9),
       R => '0'
     );
 end STRUCTURE;
@@ -1376,7 +1429,8 @@ entity GateKeeper_BD_control_parametros_0_0 is
     clk : in STD_LOGIC;
     readyRx : in STD_LOGIC;
     bufferRx : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    version : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    SW : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    LED : out STD_LOGIC_VECTOR ( 7 downto 0 );
     window : out STD_LOGIC_VECTOR ( 15 downto 0 );
     pulseShaper_width : out STD_LOGIC_VECTOR ( 7 downto 0 );
     enableGateKeeper : out STD_LOGIC
@@ -1395,30 +1449,26 @@ end GateKeeper_BD_control_parametros_0_0;
 
 architecture STRUCTURE of GateKeeper_BD_control_parametros_0_0 is
   signal \<const0>\ : STD_LOGIC;
-  signal \<const1>\ : STD_LOGIC;
+  signal \^led\ : STD_LOGIC_VECTOR ( 7 downto 3 );
+  signal \^sw\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
   attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
 begin
-  version(7) <= \<const0>\;
-  version(6) <= \<const0>\;
-  version(5) <= \<const0>\;
-  version(4) <= \<const0>\;
-  version(3) <= \<const0>\;
-  version(2) <= \<const0>\;
-  version(1) <= \<const1>\;
-  version(0) <= \<const1>\;
+  LED(7 downto 3) <= \^led\(7 downto 3);
+  LED(2) <= \^sw\(0);
+  LED(1) <= \<const0>\;
+  LED(0) <= \<const0>\;
+  \^sw\(0) <= SW(0);
 GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-VCC: unisim.vcomponents.VCC
-     port map (
-      P => \<const1>\
-    );
 inst: entity work.GateKeeper_BD_control_parametros_0_0_control_parametros
      port map (
+      LED(4 downto 0) => \^led\(7 downto 3),
+      SW(0) => \^sw\(0),
       bufferRx(7 downto 0) => bufferRx(7 downto 0),
       clk => clk,
       enableGateKeeper => enableGateKeeper,

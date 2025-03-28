@@ -59,7 +59,8 @@ module GateKeeper_BD_control_parametros_0_0 (
   clk,
   readyRx,
   bufferRx,
-  version,
+  SW,
+  LED,
   window,
   pulseShaper_width,
   enableGateKeeper
@@ -70,7 +71,8 @@ module GateKeeper_BD_control_parametros_0_0 (
 input wire clk;
 input wire readyRx;
 input wire [7 : 0] bufferRx;
-output wire [7 : 0] version;
+input wire [7 : 0] SW;
+output wire [7 : 0] LED;
 output wire [15 : 0] window;
 output wire [7 : 0] pulseShaper_width;
 output wire enableGateKeeper;
@@ -79,7 +81,8 @@ output wire enableGateKeeper;
     .clk(clk),
     .readyRx(readyRx),
     .bufferRx(bufferRx),
-    .version(version),
+    .SW(SW),
+    .LED(LED),
     .window(window),
     .pulseShaper_width(pulseShaper_width),
     .enableGateKeeper(enableGateKeeper)

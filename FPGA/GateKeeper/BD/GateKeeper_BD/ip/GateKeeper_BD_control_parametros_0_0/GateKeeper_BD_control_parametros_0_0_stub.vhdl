@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Wed Mar 26 11:52:42 2025
+-- Date        : Fri Mar 28 12:07:48 2025
 -- Host        : donaufeld running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_0/GateKeeper_BD_control_parametros_0_0_stub.vhdl
@@ -18,7 +18,8 @@ entity GateKeeper_BD_control_parametros_0_0 is
     clk : in STD_LOGIC;
     readyRx : in STD_LOGIC;
     bufferRx : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    version : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    SW : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    LED : out STD_LOGIC_VECTOR ( 7 downto 0 );
     window : out STD_LOGIC_VECTOR ( 15 downto 0 );
     pulseShaper_width : out STD_LOGIC_VECTOR ( 7 downto 0 );
     enableGateKeeper : out STD_LOGIC
@@ -30,7 +31,7 @@ architecture stub of GateKeeper_BD_control_parametros_0_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "clk,readyRx,bufferRx[7:0],version[7:0],window[15:0],pulseShaper_width[7:0],enableGateKeeper";
+attribute black_box_pad_pin of stub : architecture is "clk,readyRx,bufferRx[7:0],SW[7:0],LED[7:0],window[15:0],pulseShaper_width[7:0],enableGateKeeper";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "control_parametros,Vivado 2023.2";
 begin

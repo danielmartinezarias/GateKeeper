@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xAEBB258691E45881",
+      "boundary_crc": "0xA2ECD1544C8A5BAA",
       "device": "xc7z020clg484-1",
       "name": "GateKeeper_BD",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
@@ -316,6 +316,18 @@
             "value_src": "default"
           }
         }
+      },
+      "SW": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       }
     },
     "components": {
@@ -357,7 +369,18 @@
             "left": "7",
             "right": "0"
           },
-          "version": {
+          "SW": {
+            "direction": "I",
+            "left": "7",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "LED": {
             "direction": "O",
             "left": "7",
             "right": "0"
@@ -642,11 +665,17 @@
         "xci_path": "ip\\GateKeeper_BD_clk_wiz_0_0\\GateKeeper_BD_clk_wiz_0_0.xci",
         "inst_hier_path": "clk_wiz_0",
         "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "123.670"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "92.672"
+          },
           "CLKOUT2_JITTER": {
-            "value": "130.958"
+            "value": "123.670"
           },
           "CLKOUT2_PHASE_ERROR": {
-            "value": "98.575"
+            "value": "92.672"
           },
           "CLKOUT2_USED": {
             "value": "true"
@@ -657,8 +686,20 @@
           "CLK_OUT2_PORT": {
             "value": "clk_400MHz"
           },
+          "JITTER_SEL": {
+            "value": "Min_O_Jitter"
+          },
+          "MMCM_BANDWIDTH": {
+            "value": "HIGH"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "11.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "11.000"
+          },
           "MMCM_CLKOUT1_DIVIDE": {
-            "value": "10"
+            "value": "11"
           },
           "NUM_OUT_CLKS": {
             "value": "2"
@@ -1899,6 +1940,12 @@
           "UART_Rx_0/PinRx"
         ]
       },
+      "SW_1": {
+        "ports": [
+          "SW",
+          "control_parametros_0/SW"
+        ]
+      },
       "UART_Rx_0_bufferRx": {
         "ports": [
           "UART_Rx_0/bufferRx",
@@ -1930,31 +1977,31 @@
       "control_parametros_0_enableGateKeeper": {
         "ports": [
           "control_parametros_0/enableGateKeeper",
-          "GateKeeper_2/enable",
+          "GateKeeper_0/enable",
           "GateKeeper_1/enable",
-          "GateKeeper_0/enable"
+          "GateKeeper_2/enable"
         ]
       },
       "control_parametros_0_pulseShaper_width": {
         "ports": [
           "control_parametros_0/pulseShaper_width",
-          "GateKeeper_2/pulseShaper_width",
+          "GateKeeper_0/pulseShaper_width",
           "GateKeeper_1/pulseShaper_width",
-          "GateKeeper_0/pulseShaper_width"
+          "GateKeeper_2/pulseShaper_width"
         ]
       },
       "control_parametros_0_version": {
         "ports": [
-          "control_parametros_0/version",
+          "control_parametros_0/LED",
           "LED"
         ]
       },
       "control_parametros_0_window": {
         "ports": [
           "control_parametros_0/window",
-          "GateKeeper_2/window",
+          "GateKeeper_0/window",
           "GateKeeper_1/window",
-          "GateKeeper_0/window"
+          "GateKeeper_2/window"
         ]
       },
       "det_in_0_1": {

@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "GateKeeper_BD_control_parametros_0_0_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
-set_param xicom.use_bs_reader 1
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
@@ -98,7 +96,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/OneShot.v
   C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/control_parametros.v
 }
-read_ip -quiet c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_0/GateKeeper_BD_control_parametros_0_0.xci
+read_ip -quiet C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_0/GateKeeper_BD_control_parametros_0_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

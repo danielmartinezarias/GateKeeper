@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Wed Mar 26 11:51:55 2025
+//Date        : Fri Mar 28 12:04:18 2025
 //Host        : donaufeld running 64-bit major release  (build 9200)
 //Command     : generate_target GateKeeper_BD_wrapper.bd
 //Design      : GateKeeper_BD_wrapper
@@ -35,6 +35,7 @@ module GateKeeper_BD_wrapper
     GCLK,
     JA10,
     LED,
+    SW,
     btns_5bits_tri_i,
     det_in_0,
     det_in_1,
@@ -66,6 +67,7 @@ module GateKeeper_BD_wrapper
   input GCLK;
   input JA10;
   output [7:0]LED;
+  input [7:0]SW;
   input [4:0]btns_5bits_tri_i;
   input det_in_0;
   input det_in_1;
@@ -98,6 +100,7 @@ module GateKeeper_BD_wrapper
   wire GCLK;
   wire JA10;
   wire [7:0]LED;
+  wire [7:0]SW;
   wire [4:0]btns_5bits_tri_i;
   wire det_in_0;
   wire det_in_1;
@@ -131,6 +134,7 @@ module GateKeeper_BD_wrapper
         .GCLK(GCLK),
         .JA10(JA10),
         .LED(LED),
+        .SW(SW),
         .btns_5bits_tri_i(btns_5bits_tri_i),
         .det_in_0(det_in_0),
         .det_in_1(det_in_1),

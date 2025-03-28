@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "GateKeeper_BD_GateKeeper_1_0_synth_1" START { ROLLUP_AUTO }
-set_param xicom.use_bs_reader 1
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
@@ -83,7 +82,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.cache/wt [current_project]
 set_property parent.project_path C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.xpr [current_project]
-set_property XPM_LIBRARIES XPM_CDC [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/danie/AppData/Roaming/Xilinx/Vivado/2023.2/xhub/board_store/xilinx_board_store} [current_project]
@@ -94,7 +93,7 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/GateKeeper.v
-read_ip -quiet c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_GateKeeper_1_0/GateKeeper_BD_GateKeeper_1_0.xci
+read_ip -quiet C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_GateKeeper_1_0/GateKeeper_BD_GateKeeper_1_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

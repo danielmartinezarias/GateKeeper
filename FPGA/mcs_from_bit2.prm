@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SMAPX8
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x003DBAFB    Mar 26 11:58:15 2025    C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/impl_1/GateKeeper_BD_wrapper.bit

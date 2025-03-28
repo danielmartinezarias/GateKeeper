@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Wed Mar 26 11:51:55 2025
+//Date        : Fri Mar 28 12:04:18 2025
 //Host        : donaufeld running 64-bit major release  (build 9200)
 //Command     : generate_target GateKeeper_BD.bd
 //Design      : GateKeeper_BD
@@ -36,6 +36,7 @@ module GateKeeper_BD
     GCLK,
     JA10,
     LED,
+    SW,
     btns_5bits_tri_i,
     det_in_0,
     det_in_1,
@@ -67,6 +68,7 @@ module GateKeeper_BD
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.GCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.GCLK, CLK_DOMAIN GateKeeper_BD_GCLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input GCLK;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.JA10 DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.JA10, LAYERED_METADATA undef" *) input JA10;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.LED DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.LED, LAYERED_METADATA undef" *) output [7:0]LED;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.SW DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.SW, LAYERED_METADATA undef" *) input [7:0]SW;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 btns_5bits TRI_I" *) input [4:0]btns_5bits_tri_i;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.DET_IN_0 DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.DET_IN_0, LAYERED_METADATA undef" *) input det_in_0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.DET_IN_1 DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.DET_IN_1, LAYERED_METADATA undef" *) input det_in_1;
@@ -80,6 +82,7 @@ module GateKeeper_BD
   wire GateKeeper_1_det_out;
   wire GateKeeper_2_det_out;
   wire JA10_1;
+  wire [7:0]SW_1;
   wire [7:0]UART_Rx_0_bufferRx;
   wire UART_Rx_0_readyRx;
   wire [4:0]axi_gpio_0_GPIO_TRI_I;
@@ -176,6 +179,7 @@ module GateKeeper_BD
   assign GCLK_1 = GCLK;
   assign JA10_1 = JA10;
   assign LED[7:0] = control_parametros_0_version;
+  assign SW_1 = SW[7:0];
   assign axi_gpio_0_GPIO_TRI_I = btns_5bits_tri_i[4:0];
   assign det_in_0_1 = det_in_0;
   assign det_in_1_1 = det_in_1;
@@ -236,12 +240,13 @@ module GateKeeper_BD
         .clk_400MHz(clk_wiz_0_clk_400MHz),
         .clk_in1(GCLK_1));
   GateKeeper_BD_control_parametros_0_0 control_parametros_0
-       (.bufferRx(UART_Rx_0_bufferRx),
+       (.LED(control_parametros_0_version),
+        .SW(SW_1),
+        .bufferRx(UART_Rx_0_bufferRx),
         .clk(clk_wiz_0_clk_100MHz),
         .enableGateKeeper(control_parametros_0_enableGateKeeper),
         .pulseShaper_width(control_parametros_0_pulseShaper_width),
         .readyRx(UART_Rx_0_readyRx),
-        .version(control_parametros_0_version),
         .window(control_parametros_0_window));
   GateKeeper_BD_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr[14:0]),
