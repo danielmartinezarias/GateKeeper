@@ -417,7 +417,7 @@
             "direction": "I",
             "parameters": {
               "FREQ_HZ": {
-                "value": "100000000",
+                "value": "400000000",
                 "value_src": "ip_prop"
               },
               "PHASE": {
@@ -474,7 +474,7 @@
             "direction": "I",
             "parameters": {
               "FREQ_HZ": {
-                "value": "100000000",
+                "value": "400000000",
                 "value_src": "ip_prop"
               },
               "PHASE": {
@@ -531,7 +531,7 @@
             "direction": "I",
             "parameters": {
               "FREQ_HZ": {
-                "value": "100000000",
+                "value": "400000000",
                 "value_src": "ip_prop"
               },
               "PHASE": {
@@ -665,20 +665,44 @@
         "xci_path": "ip\\GateKeeper_BD_clk_wiz_0_0\\GateKeeper_BD_clk_wiz_0_0.xci",
         "inst_hier_path": "clk_wiz_0",
         "parameters": {
+          "CLKOUT1_DRIVES": {
+            "value": "BUFG"
+          },
           "CLKOUT1_JITTER": {
-            "value": "123.670"
+            "value": "115.831"
           },
           "CLKOUT1_PHASE_ERROR": {
-            "value": "92.672"
+            "value": "87.180"
+          },
+          "CLKOUT2_DRIVES": {
+            "value": "BUFG"
           },
           "CLKOUT2_JITTER": {
-            "value": "123.670"
+            "value": "90.074"
           },
           "CLKOUT2_PHASE_ERROR": {
-            "value": "92.672"
+            "value": "87.180"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "400.000"
           },
           "CLKOUT2_USED": {
             "value": "true"
+          },
+          "CLKOUT3_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT4_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT5_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT6_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT7_DRIVES": {
+            "value": "BUFG"
           },
           "CLK_OUT1_PORT": {
             "value": "clk_100MHz"
@@ -693,16 +717,22 @@
             "value": "HIGH"
           },
           "MMCM_CLKFBOUT_MULT_F": {
-            "value": "11.000"
+            "value": "12"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "11.000"
+            "value": "12"
           },
           "MMCM_CLKOUT1_DIVIDE": {
-            "value": "11"
+            "value": "3"
+          },
+          "MMCM_COMPENSATION": {
+            "value": "ZHOLD"
           },
           "NUM_OUT_CLKS": {
             "value": "2"
+          },
+          "PRIMITIVE": {
+            "value": "PLL"
           },
           "USE_LOCKED": {
             "value": "false"
