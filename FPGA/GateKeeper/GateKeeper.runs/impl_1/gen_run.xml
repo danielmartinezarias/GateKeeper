@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1743164358">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1743422841">
   <File Type="ROUTE-PWR" Name="GateKeeper_BD_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="GateKeeper_BD_wrapper.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="GateKeeper_BD_wrapper_power_summary_routed.pb"/>
@@ -86,20 +86,6 @@
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/srcs/OneShot.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/srcs/control_parametros.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/srcs/GateKeeper.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -114,7 +100,21 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/srcs/OneShot.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/srcs/UART_Rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/srcs/control_parametros.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -202,8 +202,8 @@
   <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_GateKeeper_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_control_parametros_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_GateKeeper_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_GateKeeper_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="GateKeeper_BD_control_parametros_0_1"/>
 </GenRun>

@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Fri Mar 28 13:19:04 2025
+//Date        : Mon Mar 31 14:07:10 2025
 //Host        : donaufeld running 64-bit major release  (build 9200)
 //Command     : generate_target GateKeeper_BD.bd
 //Design      : GateKeeper_BD
@@ -88,10 +88,16 @@ module GateKeeper_BD
   wire [4:0]axi_gpio_0_GPIO_TRI_I;
   wire clk_wiz_0_clk_100MHz;
   wire clk_wiz_0_clk_400MHz;
-  wire control_parametros_0_enableGateKeeper;
-  wire [7:0]control_parametros_0_pulseShaper_width;
-  wire [7:0]control_parametros_0_version;
-  wire [15:0]control_parametros_0_window;
+  wire [7:0]control_parametros_0_LED;
+  wire control_parametros_0_enableGateKeeper0;
+  wire control_parametros_0_enableGateKeeper1;
+  wire control_parametros_0_enableGateKeeper2;
+  wire [7:0]control_parametros_0_pulseShaper_width0;
+  wire [7:0]control_parametros_0_pulseShaper_width1;
+  wire [7:0]control_parametros_0_pulseShaper_width2;
+  wire [15:0]control_parametros_0_window0;
+  wire [15:0]control_parametros_0_window1;
+  wire [15:0]control_parametros_0_window2;
   wire det_in_0_1;
   wire det_in_1_1;
   wire det_in_2_1;
@@ -178,7 +184,7 @@ module GateKeeper_BD
 
   assign GCLK_1 = GCLK;
   assign JA10_1 = JA10;
-  assign LED[7:0] = control_parametros_0_version;
+  assign LED[7:0] = control_parametros_0_LED;
   assign SW_1 = SW[7:0];
   assign axi_gpio_0_GPIO_TRI_I = btns_5bits_tri_i[4:0];
   assign det_in_0_1 = det_in_0;
@@ -191,23 +197,23 @@ module GateKeeper_BD
        (.clk(clk_wiz_0_clk_400MHz),
         .det_in(det_in_0_1),
         .det_out(GateKeeper_0_det_out),
-        .enable(control_parametros_0_enableGateKeeper),
-        .pulseShaper_width(control_parametros_0_pulseShaper_width),
-        .window(control_parametros_0_window));
+        .enable(control_parametros_0_enableGateKeeper0),
+        .pulseShaper_width(control_parametros_0_pulseShaper_width0),
+        .window(control_parametros_0_window0));
   GateKeeper_BD_GateKeeper_1_0 GateKeeper_1
        (.clk(clk_wiz_0_clk_400MHz),
         .det_in(det_in_1_1),
         .det_out(GateKeeper_1_det_out),
-        .enable(control_parametros_0_enableGateKeeper),
-        .pulseShaper_width(control_parametros_0_pulseShaper_width),
-        .window(control_parametros_0_window));
+        .enable(control_parametros_0_enableGateKeeper1),
+        .pulseShaper_width(control_parametros_0_pulseShaper_width1),
+        .window(control_parametros_0_window1));
   GateKeeper_BD_GateKeeper_2_0 GateKeeper_2
        (.clk(clk_wiz_0_clk_400MHz),
         .det_in(det_in_2_1),
         .det_out(GateKeeper_2_det_out),
-        .enable(control_parametros_0_enableGateKeeper),
-        .pulseShaper_width(control_parametros_0_pulseShaper_width),
-        .window(control_parametros_0_window));
+        .enable(control_parametros_0_enableGateKeeper2),
+        .pulseShaper_width(control_parametros_0_pulseShaper_width2),
+        .window(control_parametros_0_window2));
   GateKeeper_BD_UART_Rx_0_0 UART_Rx_0
        (.PinRx(JA10_1),
         .bufferRx(UART_Rx_0_bufferRx),
@@ -239,15 +245,21 @@ module GateKeeper_BD
        (.clk_100MHz(clk_wiz_0_clk_100MHz),
         .clk_400MHz(clk_wiz_0_clk_400MHz),
         .clk_in1(GCLK_1));
-  GateKeeper_BD_control_parametros_0_0 control_parametros_0
-       (.LED(control_parametros_0_version),
+  GateKeeper_BD_control_parametros_0_1 control_parametros_0
+       (.LED(control_parametros_0_LED),
         .SW(SW_1),
         .bufferRx(UART_Rx_0_bufferRx),
         .clk(clk_wiz_0_clk_100MHz),
-        .enableGateKeeper(control_parametros_0_enableGateKeeper),
-        .pulseShaper_width(control_parametros_0_pulseShaper_width),
+        .enableGateKeeper0(control_parametros_0_enableGateKeeper0),
+        .enableGateKeeper1(control_parametros_0_enableGateKeeper1),
+        .enableGateKeeper2(control_parametros_0_enableGateKeeper2),
+        .pulseShaper_width0(control_parametros_0_pulseShaper_width0),
+        .pulseShaper_width1(control_parametros_0_pulseShaper_width1),
+        .pulseShaper_width2(control_parametros_0_pulseShaper_width2),
         .readyRx(UART_Rx_0_readyRx),
-        .window(control_parametros_0_window));
+        .window0(control_parametros_0_window0),
+        .window1(control_parametros_0_window1),
+        .window2(control_parametros_0_window2));
   GateKeeper_BD_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr[14:0]),
         .DDR_BankAddr(DDR_ba[2:0]),

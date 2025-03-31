@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 //using System.Windows.Forms.DataVisualization.Charting;
 
@@ -62,10 +63,19 @@ namespace GateKeeperGUI
             button1.Enabled = true;
             numericUpDown1.Enabled = true;
             numericUpDown2.Enabled = true;
+            numericUpDown3.Enabled = true;
+            numericUpDown4.Enabled = true;
+            numericUpDown5.Enabled = true;
+            numericUpDown6.Enabled = true;
             if (serialPort_FPGA.IsOpen)
             {
                 numericUpDown1.Value = Convert.ToDecimal(ObjetoIOP.matrixPropiedades[21, 1]);
                 numericUpDown2.Value = Convert.ToDecimal(ObjetoIOP.matrixPropiedades[22, 1]);
+                numericUpDown3.Value = Convert.ToDecimal(ObjetoIOP.matrixPropiedades[25, 1]);
+                numericUpDown4.Value = Convert.ToDecimal(ObjetoIOP.matrixPropiedades[24, 1]);
+                numericUpDown5.Value = Convert.ToDecimal(ObjetoIOP.matrixPropiedades[28, 1]);
+                numericUpDown6.Value = Convert.ToDecimal(ObjetoIOP.matrixPropiedades[27, 1]);
+
             }
             else
             {
@@ -260,24 +270,91 @@ namespace GateKeeperGUI
                 ParametroSerial(23, 8, 0, 0);
             }
         }
-        int window = 0;
+        int window0 = 0;
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            window = (int)((double)(numericUpDown1.Value) / 2.5);
-            //label2.Text = Convert.ToString(window);
-            ObjetoIOP.guardarPropiedades(21, "window_numericUpDown1", numericUpDown1.Value.ToString());
-            ParametroSerial(21, 16, window, 0);
+            window0 = (int)((double)(numericUpDown1.Value) / 2.5);
+            //label2.Text = Convert.ToString(window0);
+            ObjetoIOP.guardarPropiedades(21, "window0_numericUpDown1", numericUpDown1.Value.ToString());
+            ParametroSerial(21, 16, window0, 0);
         }
 
-        int pulseShaperWidth = 0;
+        int pulseShaperWidth0 = 0;
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
-            pulseShaperWidth = (int)((double)(numericUpDown2.Value) / 2.5); 
+            pulseShaperWidth0 = (int)((double)(numericUpDown2.Value) / 2.5); 
             //label2.Text = Convert.ToString(pulseShaperWidth);
-            ObjetoIOP.guardarPropiedades(22, "pulseShaperWidth_numericUpDown2", numericUpDown2.Value.ToString());
-            ParametroSerial(22, 8, pulseShaperWidth, 0);
+            ObjetoIOP.guardarPropiedades(22, "pulseShaperWidth0_numericUpDown2", numericUpDown2.Value.ToString());
+            ParametroSerial(22, 8, pulseShaperWidth0, 0);
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (button2.Text == "Enable")
+            {
+                button1.Text = "Disable";
+                ParametroSerial(26, 8, 1, 0);
+            }
+            else
+            {
+                button2.Text = "Enable";
+                ParametroSerial(26, 8, 0, 0);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (button3.Text == "Enable")
+            {
+                button1.Text = "Disable";
+                ParametroSerial(29, 8, 1, 0);
+            }
+            else
+            {
+                button3.Text = "Enable";
+                ParametroSerial(29, 8, 0, 0);
+            }
+        }
+
+        int window1;
+        private void numericUpDown4_ValueChanged(object sender, EventArgs e)
+        {
+            window1 = (int)((double)(numericUpDown4.Value) / 2.5);
+            //label2.Text = Convert.ToString(window);
+            ObjetoIOP.guardarPropiedades(24, "window1_numericUpDown4", numericUpDown4.Value.ToString());
+            ParametroSerial(24, 16, window1, 0);
+        }
+
+        int window2;
+        private void numericUpDown6_ValueChanged(object sender, EventArgs e)
+        {
+            window2 = (int)((double)(numericUpDown6.Value) / 2.5);
+            //label2.Text = Convert.ToString(window);
+            ObjetoIOP.guardarPropiedades(27, "window2_numericUpDown6", numericUpDown6.Value.ToString());
+            ParametroSerial(27, 16, window2, 0);
+        }
+
+        int pulseShaperWidth1;
+        private void numericUpDown3_ValueChanged(object sender, EventArgs e)
+        {
+            pulseShaperWidth1 = (int)((double)(numericUpDown3.Value) / 2.5);
+            //label2.Text = Convert.ToString(pulseShaperWidth);
+            ObjetoIOP.guardarPropiedades(25, "pulseShaperWidth1_numericUpDown3", numericUpDown3.Value.ToString());
+            ParametroSerial(25, 8, pulseShaperWidth1, 0);
+        }
+
+        int pulseShaperWidth2;
+        private void numericUpDown5_ValueChanged(object sender, EventArgs e)
+        {
+            pulseShaperWidth2 = (int)((double)(numericUpDown5.Value) / 2.5);
+            //label2.Text = Convert.ToString(pulseShaperWidth);
+            ObjetoIOP.guardarPropiedades(28, "pulseShaperWidth2_numericUpDown5", numericUpDown5.Value.ToString());
+            ParametroSerial(28, 8, pulseShaperWidth2, 0);
+        }
     }
 }

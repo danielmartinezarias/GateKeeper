@@ -10,7 +10,6 @@
       "validated": "true"
     },
     "design_tree": {
-      "control_parametros_0": "",
       "GateKeeper_0": "",
       "GateKeeper_1": "",
       "GateKeeper_2": "",
@@ -24,7 +23,8 @@
           "auto_pc": ""
         }
       },
-      "rst_ps7_0_100M": ""
+      "rst_ps7_0_100M": "",
+      "control_parametros_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -331,75 +331,6 @@
       }
     },
     "components": {
-      "control_parametros_0": {
-        "vlnv": "xilinx.com:module_ref:control_parametros:1.0",
-        "ip_revision": "1",
-        "xci_name": "GateKeeper_BD_control_parametros_0_0",
-        "xci_path": "ip\\GateKeeper_BD_control_parametros_0_0\\GateKeeper_BD_control_parametros_0_0.xci",
-        "inst_hier_path": "control_parametros_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "control_parametros",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "readyRx": {
-            "direction": "I"
-          },
-          "bufferRx": {
-            "direction": "I",
-            "left": "7",
-            "right": "0"
-          },
-          "SW": {
-            "direction": "I",
-            "left": "7",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "undef",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "LED": {
-            "direction": "O",
-            "left": "7",
-            "right": "0"
-          },
-          "window": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          },
-          "pulseShaper_width": {
-            "direction": "O",
-            "left": "7",
-            "right": "0"
-          },
-          "enableGateKeeper": {
-            "direction": "O"
-          }
-        }
-      },
       "GateKeeper_0": {
         "vlnv": "xilinx.com:module_ref:GateKeeper:1.0",
         "ip_revision": "1",
@@ -1908,6 +1839,101 @@
         "xci_name": "GateKeeper_BD_rst_ps7_0_100M_0",
         "xci_path": "ip\\GateKeeper_BD_rst_ps7_0_100M_0\\GateKeeper_BD_rst_ps7_0_100M_0.xci",
         "inst_hier_path": "rst_ps7_0_100M"
+      },
+      "control_parametros_0": {
+        "vlnv": "xilinx.com:module_ref:control_parametros:1.0",
+        "ip_revision": "1",
+        "xci_name": "GateKeeper_BD_control_parametros_0_1",
+        "xci_path": "ip\\GateKeeper_BD_control_parametros_0_1\\GateKeeper_BD_control_parametros_0_1.xci",
+        "inst_hier_path": "control_parametros_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "control_parametros",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "readyRx": {
+            "direction": "I"
+          },
+          "bufferRx": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "SW": {
+            "direction": "I",
+            "left": "7",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "LED": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "window0": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "window1": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "window2": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "pulseShaper_width0": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "pulseShaper_width1": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "pulseShaper_width2": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "enableGateKeeper0": {
+            "direction": "O"
+          },
+          "enableGateKeeper1": {
+            "direction": "O"
+          },
+          "enableGateKeeper2": {
+            "direction": "O"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -2007,33 +2033,63 @@
           "GateKeeper_2/clk"
         ]
       },
-      "control_parametros_0_enableGateKeeper": {
-        "ports": [
-          "control_parametros_0/enableGateKeeper",
-          "GateKeeper_0/enable",
-          "GateKeeper_1/enable",
-          "GateKeeper_2/enable"
-        ]
-      },
-      "control_parametros_0_pulseShaper_width": {
-        "ports": [
-          "control_parametros_0/pulseShaper_width",
-          "GateKeeper_0/pulseShaper_width",
-          "GateKeeper_1/pulseShaper_width",
-          "GateKeeper_2/pulseShaper_width"
-        ]
-      },
-      "control_parametros_0_version": {
+      "control_parametros_0_LED": {
         "ports": [
           "control_parametros_0/LED",
           "LED"
         ]
       },
-      "control_parametros_0_window": {
+      "control_parametros_0_enableGateKeeper0": {
         "ports": [
-          "control_parametros_0/window",
-          "GateKeeper_0/window",
-          "GateKeeper_1/window",
+          "control_parametros_0/enableGateKeeper0",
+          "GateKeeper_0/enable"
+        ]
+      },
+      "control_parametros_0_enableGateKeeper1": {
+        "ports": [
+          "control_parametros_0/enableGateKeeper1",
+          "GateKeeper_1/enable"
+        ]
+      },
+      "control_parametros_0_enableGateKeeper2": {
+        "ports": [
+          "control_parametros_0/enableGateKeeper2",
+          "GateKeeper_2/enable"
+        ]
+      },
+      "control_parametros_0_pulseShaper_width0": {
+        "ports": [
+          "control_parametros_0/pulseShaper_width0",
+          "GateKeeper_0/pulseShaper_width"
+        ]
+      },
+      "control_parametros_0_pulseShaper_width1": {
+        "ports": [
+          "control_parametros_0/pulseShaper_width1",
+          "GateKeeper_1/pulseShaper_width"
+        ]
+      },
+      "control_parametros_0_pulseShaper_width2": {
+        "ports": [
+          "control_parametros_0/pulseShaper_width2",
+          "GateKeeper_2/pulseShaper_width"
+        ]
+      },
+      "control_parametros_0_window0": {
+        "ports": [
+          "control_parametros_0/window0",
+          "GateKeeper_0/window"
+        ]
+      },
+      "control_parametros_0_window1": {
+        "ports": [
+          "control_parametros_0/window1",
+          "GateKeeper_1/window"
+        ]
+      },
+      "control_parametros_0_window2": {
+        "ports": [
+          "control_parametros_0/window2",
           "GateKeeper_2/window"
         ]
       },

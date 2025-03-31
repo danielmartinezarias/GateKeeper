@@ -6,9 +6,6 @@
 # Block Designs: C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/GateKeeper_BD.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GateKeeper_BD || ORIG_REF_NAME==GateKeeper_BD} -quiet] -quiet
 
-# IP: C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_0/GateKeeper_BD_control_parametros_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GateKeeper_BD_control_parametros_0_0 || ORIG_REF_NAME==GateKeeper_BD_control_parametros_0_0} -quiet] -quiet
-
 # IP: C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_GateKeeper_0_0/GateKeeper_BD_GateKeeper_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GateKeeper_BD_GateKeeper_0_0 || ORIG_REF_NAME==GateKeeper_BD_GateKeeper_0_0} -quiet] -quiet
 
@@ -38,6 +35,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GateKeeper_
 
 # IP: C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_rst_ps7_0_100M_0/GateKeeper_BD_rst_ps7_0_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GateKeeper_BD_rst_ps7_0_100M_0 || ORIG_REF_NAME==GateKeeper_BD_rst_ps7_0_100M_0} -quiet] -quiet
+
+# IP: c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_1/GateKeeper_BD_control_parametros_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GateKeeper_BD_control_parametros_0_1 || ORIG_REF_NAME==GateKeeper_BD_control_parametros_0_1} -quiet] -quiet
 
 # IP: c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_auto_pc_0/GateKeeper_BD_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GateKeeper_BD_auto_pc_0 || ORIG_REF_NAME==GateKeeper_BD_auto_pc_0} -quiet] -quiet

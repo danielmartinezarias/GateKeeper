@@ -19,14 +19,20 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module control_parametros(
-   input clk,
+   input clk, 
 	input readyRx,
 	input [7:0] bufferRx,
 	input [7:0] SW,
 	output wire [7:0] LED, 
-	output reg [15:0] window = 16'd6,
-	output reg [7:0] pulseShaper_width = 8'd20,
-	output reg enableGateKeeper = 1'b0
+	output reg [15:0] window0 = 16'd6, 
+	output reg [15:0] window1 = 16'd6, 
+	output reg [15:0] window2 = 16'd6,
+	output reg [7:0] pulseShaper_width0 = 8'd20, 
+	output reg [7:0] pulseShaper_width1 = 8'd20, 
+	output reg [7:0] pulseShaper_width2 = 8'd20,
+	output reg enableGateKeeper0 = 1'b0, 
+	output reg enableGateKeeper1 = 1'b0, 
+	output reg enableGateKeeper2 = 1'b0
     );
 
 OneShot o1 (
@@ -48,9 +54,9 @@ reg [15:0] orden = 0;
 reg [31:0] counter = 32'd0;
 
 
-reg [7:0] version = 8'd4;
+reg [7:0] version = 8'd5; // version
 
-assign LED = (SW[0]) ? {window[4:0],version[2:0]}:8'd0;
+assign LED = (SW[0]) ? {window0[4:0],version[2:0]}:8'd0;
 
 
 
@@ -138,17 +144,47 @@ case (ctrl)
 	end
 	
 	21: begin
-		window					<= {d2,d1};
+		window0					<= {d2,d1};
 		ctrl					<= 16'd0;
 	end
 
 	22: begin
-		pulseShaper_width		<= {d1};
+		pulseShaper_width0		<= {d1};
 		ctrl					<= 16'd0;
 	end
 
 	23: begin
-		enableGateKeeper		<= d1[0];
+		enableGateKeeper0		<= d1[0];
+		ctrl					<= 16'd0;
+	end
+
+	24: begin
+		window1					<= {d2,d1};
+		ctrl					<= 16'd0;
+	end
+
+	25: begin
+		pulseShaper_width1		<= {d1};
+		ctrl					<= 16'd0;
+	end
+
+	26: begin
+		enableGateKeeper1		<= d1[0];
+		ctrl					<= 16'd0;
+	end
+
+	27: begin
+		window2					<= {d2,d1};
+		ctrl					<= 16'd0;
+	end
+
+	28: begin
+		pulseShaper_width2		<= {d1};
+		ctrl					<= 16'd0;
+	end
+
+	29: begin
+		enableGateKeeper2		<= d1[0];
 		ctrl					<= 16'd0;
 	end
 	

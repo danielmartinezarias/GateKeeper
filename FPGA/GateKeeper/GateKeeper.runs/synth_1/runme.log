@@ -12,11 +12,11 @@
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source GateKeeper_BD_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 556.164 ; gain = 181.801
+create_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 556.145 ; gain = 181.625
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
-add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 574.898 ; gain = 18.734
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 575.277 ; gain = 19.133
 Command: read_checkpoint -auto_incremental -incremental C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.srcs/utils_1/imports/synth_1/top.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -29,52 +29,52 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 19916
+INFO: [Synth 8-7075] Helper process launched with PID 11940
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1447.418 ; gain = 439.477
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1448.148 ; gain = 440.789
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_wrapper' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/hdl/GateKeeper_BD_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:13]
-INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_GateKeeper_0_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_GateKeeper_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_GateKeeper_0_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_GateKeeper_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_GateKeeper_1_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_GateKeeper_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_GateKeeper_1_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_GateKeeper_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_GateKeeper_2_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_GateKeeper_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_GateKeeper_2_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_GateKeeper_2_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_UART_Rx_0_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_UART_Rx_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_UART_Rx_0_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_UART_Rx_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_axi_gpio_0_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_axi_gpio_0_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_clk_wiz_0_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_clk_wiz_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_clk_wiz_0_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_clk_wiz_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_control_parametros_0_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_control_parametros_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_control_parametros_0_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_control_parametros_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_processing_system7_0_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_processing_system7_0_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_processing_system7_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'GateKeeper_BD_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:251]
-WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'GateKeeper_BD_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:251]
-WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'GateKeeper_BD_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:251]
-WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'GateKeeper_BD_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:251]
-WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'GateKeeper_BD_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:251]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'GateKeeper_BD_processing_system7_0_0' has 68 connections declared, but only 63 given [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:251]
-INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_ps7_0_axi_periph_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:389]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_L0LFFQ' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:694]
-INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_auto_pc_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_auto_pc_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_auto_pc_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'GateKeeper_BD_auto_pc_0' is unconnected for instance 'auto_pc' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:929]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'GateKeeper_BD_auto_pc_0' is unconnected for instance 'auto_pc' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:929]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'GateKeeper_BD_auto_pc_0' has 59 connections declared, but only 57 given [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:929]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_L0LFFQ' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:694]
-INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_ps7_0_axi_periph_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:389]
-INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_rst_ps7_0_100M_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_rst_ps7_0_100M_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_rst_ps7_0_100M_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'GateKeeper_BD_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:377]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'GateKeeper_BD_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:377]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'GateKeeper_BD_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:377]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'GateKeeper_BD_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:377]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'GateKeeper_BD_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:377]
-INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_tick_generator_0_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_tick_generator_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_tick_generator_0_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-6176-donaufeld/realtime/GateKeeper_BD_tick_generator_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_GateKeeper_0_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_GateKeeper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_GateKeeper_0_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_GateKeeper_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_GateKeeper_1_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_GateKeeper_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_GateKeeper_1_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_GateKeeper_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_GateKeeper_2_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_GateKeeper_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_GateKeeper_2_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_GateKeeper_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_UART_Rx_0_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_UART_Rx_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_UART_Rx_0_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_UART_Rx_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_axi_gpio_0_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_axi_gpio_0_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_clk_wiz_0_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_clk_wiz_0_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_control_parametros_0_1' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_control_parametros_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_control_parametros_0_1' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_control_parametros_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_processing_system7_0_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_processing_system7_0_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'GateKeeper_BD_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:263]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'GateKeeper_BD_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:263]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'GateKeeper_BD_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:263]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'GateKeeper_BD_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:263]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'GateKeeper_BD_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:263]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'GateKeeper_BD_processing_system7_0_0' has 68 connections declared, but only 63 given [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:263]
+INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_ps7_0_axi_periph_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:401]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_L0LFFQ' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:706]
+INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_auto_pc_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_auto_pc_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'GateKeeper_BD_auto_pc_0' is unconnected for instance 'auto_pc' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:941]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'GateKeeper_BD_auto_pc_0' is unconnected for instance 'auto_pc' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:941]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'GateKeeper_BD_auto_pc_0' has 59 connections declared, but only 57 given [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:941]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_L0LFFQ' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:706]
+INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_ps7_0_axi_periph_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:401]
+INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_rst_ps7_0_100M_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_rst_ps7_0_100M_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'GateKeeper_BD_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:389]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'GateKeeper_BD_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:389]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'GateKeeper_BD_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:389]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'GateKeeper_BD_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:389]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'GateKeeper_BD_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:389]
+INFO: [Synth 8-6157] synthesizing module 'GateKeeper_BD_tick_generator_0_0' [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_tick_generator_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_tick_generator_0_0' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/.Xil/Vivado-15056-donaufeld/realtime/GateKeeper_BD_tick_generator_0_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/synth/GateKeeper_BD.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'GateKeeper_BD_wrapper' (0#1) [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/hdl/GateKeeper_BD_wrapper.v:13]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_L0LFFQ is either unconnected or has no load
@@ -82,24 +82,22 @@ WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_L0LFFQ is eith
 WARNING: [Synth 8-7129] Port ACLK in module GateKeeper_BD_ps7_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ARESETN in module GateKeeper_BD_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1561.098 ; gain = 553.156
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1559.926 ; gain = 552.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1561.098 ; gain = 553.156
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1559.926 ; gain = 552.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1561.098 ; gain = 553.156
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1559.926 ; gain = 552.566
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1561.098 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1559.926 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_0/GateKeeper_BD_control_parametros_0_0/GateKeeper_BD_control_parametros_0_0_in_context.xdc] for cell 'GateKeeper_BD_i/control_parametros_0'
-Finished Parsing XDC File [c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_0/GateKeeper_BD_control_parametros_0_0/GateKeeper_BD_control_parametros_0_0_in_context.xdc] for cell 'GateKeeper_BD_i/control_parametros_0'
 Parsing XDC File [c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_GateKeeper_0_0/GateKeeper_BD_GateKeeper_0_0/GateKeeper_BD_GateKeeper_0_0_in_context.xdc] for cell 'GateKeeper_BD_i/GateKeeper_0'
 Finished Parsing XDC File [c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_GateKeeper_0_0/GateKeeper_BD_GateKeeper_0_0/GateKeeper_BD_GateKeeper_0_0_in_context.xdc] for cell 'GateKeeper_BD_i/GateKeeper_0'
 Parsing XDC File [c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_GateKeeper_1_0/GateKeeper_BD_GateKeeper_1_0/GateKeeper_BD_GateKeeper_1_0_in_context.xdc] for cell 'GateKeeper_BD_i/GateKeeper_1'
@@ -120,6 +118,8 @@ Parsing XDC File [c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/
 Finished Parsing XDC File [c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_auto_pc_0/GateKeeper_BD_auto_pc_0/GateKeeper_BD_auto_pc_0_in_context.xdc] for cell 'GateKeeper_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_rst_ps7_0_100M_0/GateKeeper_BD_rst_ps7_0_100M_0/GateKeeper_BD_rst_ps7_0_100M_0_in_context.xdc] for cell 'GateKeeper_BD_i/rst_ps7_0_100M'
 Finished Parsing XDC File [c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_rst_ps7_0_100M_0/GateKeeper_BD_rst_ps7_0_100M_0/GateKeeper_BD_rst_ps7_0_100M_0_in_context.xdc] for cell 'GateKeeper_BD_i/rst_ps7_0_100M'
+Parsing XDC File [c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_1/GateKeeper_BD_control_parametros_0_1/GateKeeper_BD_control_parametros_0_1_in_context.xdc] for cell 'GateKeeper_BD_i/control_parametros_0'
+Finished Parsing XDC File [c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_1/GateKeeper_BD_control_parametros_0_1/GateKeeper_BD_control_parametros_0_1_in_context.xdc] for cell 'GateKeeper_BD_i/control_parametros_0'
 Parsing XDC File [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/Zedboard-Master.xdc]
 WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/Zedboard-Master.xdc:362]
 WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/Zedboard-Master.xdc:367]
@@ -132,23 +132,23 @@ Parsing XDC File [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/Gat
 Finished Parsing XDC File [C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1584.000 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1568.844 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 The system cannot find the path specified.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1584.000 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1568.844 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1568.844 ; gain = 561.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1568.844 ; gain = 561.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -416,7 +416,6 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint 
 Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_processing_system7_0_0/GateKeeper_BD_processing_system7_0_0/GateKeeper_BD_processing_system7_0_0_in_context.xdc, line 260).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_processing_system7_0_0/GateKeeper_BD_processing_system7_0_0/GateKeeper_BD_processing_system7_0_0_in_context.xdc, line 261).
 Applied set_property KEEP_HIERARCHY = SOFT for GateKeeper_BD_i. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for GateKeeper_BD_i/control_parametros_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for GateKeeper_BD_i/GateKeeper_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for GateKeeper_BD_i/GateKeeper_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for GateKeeper_BD_i/GateKeeper_2. (constraint file  auto generated constraint).
@@ -428,11 +427,12 @@ Applied set_property KEEP_HIERARCHY = SOFT for GateKeeper_BD_i/axi_gpio_0. (cons
 Applied set_property KEEP_HIERARCHY = SOFT for GateKeeper_BD_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for GateKeeper_BD_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for GateKeeper_BD_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for GateKeeper_BD_i/control_parametros_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1568.844 ; gain = 561.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1568.844 ; gain = 561.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -459,25 +459,25 @@ WARNING: [Synth 8-7129] Port ARESETN in module GateKeeper_BD_ps7_0_axi_periph_0 
 WARNING: [Synth 8-7129] Port M00_ACLK in module GateKeeper_BD_ps7_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M00_ARESETN in module GateKeeper_BD_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1568.844 ; gain = 561.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1568.844 ; gain = 561.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1568.844 ; gain = 561.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1568.844 ; gain = 561.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -495,37 +495,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1578.168 ; gain = 570.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1578.168 ; gain = 570.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1578.168 ; gain = 570.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1578.168 ; gain = 570.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1578.168 ; gain = 570.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1578.168 ; gain = 570.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -542,7 +542,7 @@ Report BlackBoxes:
 |5     |GateKeeper_BD_UART_Rx_0_0            |         1|
 |6     |GateKeeper_BD_axi_gpio_0_0           |         1|
 |7     |GateKeeper_BD_clk_wiz_0_0            |         1|
-|8     |GateKeeper_BD_control_parametros_0_0 |         1|
+|8     |GateKeeper_BD_control_parametros_0_1 |         1|
 |9     |GateKeeper_BD_processing_system7_0_0 |         1|
 |10    |GateKeeper_BD_rst_ps7_0_100M_0       |         1|
 |11    |GateKeeper_BD_tick_generator_0_0     |         1|
@@ -567,26 +567,26 @@ Report Cell Usage:
 |13    |OBUF                               |    11|
 +------+-----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1578.168 ; gain = 570.809
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 1584.000 ; gain = 553.156
-Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1584.000 ; gain = 576.059
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:01:03 . Memory (MB): peak = 1578.168 ; gain = 561.891
+Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1578.168 ; gain = 570.809
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1584.000 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1590.242 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1587.418 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1594.832 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 The system cannot find the path specified.
-Synth Design complete | Checksum: 298a3d0
+Synth Design complete | Checksum: 543a89ac
 INFO: [Common 17-83] Releasing license: Synthesis
 52 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:11 . Memory (MB): peak = 1587.418 ; gain = 1003.504
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1587.418 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:22 . Memory (MB): peak = 1594.832 ; gain = 1009.695
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1594.832 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.runs/synth_1/GateKeeper_BD_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file GateKeeper_BD_wrapper_utilization_synth.rpt -pb GateKeeper_BD_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 28 13:23:55 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 31 14:11:17 2025...

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Mar 28 13:19:08 2025" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 31 14:07:11 2025" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="avnet.com:zedboard:part0:1.4" DEVICE="7z020" NAME="GateKeeper_BD" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -241,19 +241,19 @@
             <CONNECTION INSTANCE="External_Ports" PORT="det_out_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="control_parametros_0_enableGateKeeper">
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="control_parametros_0_enableGateKeeper0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="control_parametros_0" PORT="enableGateKeeper"/>
+            <CONNECTION INSTANCE="control_parametros_0" PORT="enableGateKeeper0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="7" NAME="pulseShaper_width" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_pulseShaper_width">
+        <PORT DIR="I" LEFT="7" NAME="pulseShaper_width" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_pulseShaper_width0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="control_parametros_0" PORT="pulseShaper_width"/>
+            <CONNECTION INSTANCE="control_parametros_0" PORT="pulseShaper_width0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="window" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_window">
+        <PORT DIR="I" LEFT="15" NAME="window" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_window0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="control_parametros_0" PORT="window"/>
+            <CONNECTION INSTANCE="control_parametros_0" PORT="window0"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -281,19 +281,19 @@
             <CONNECTION INSTANCE="External_Ports" PORT="det_out_1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="control_parametros_0_enableGateKeeper">
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="control_parametros_0_enableGateKeeper1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="control_parametros_0" PORT="enableGateKeeper"/>
+            <CONNECTION INSTANCE="control_parametros_0" PORT="enableGateKeeper1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="7" NAME="pulseShaper_width" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_pulseShaper_width">
+        <PORT DIR="I" LEFT="7" NAME="pulseShaper_width" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_pulseShaper_width1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="control_parametros_0" PORT="pulseShaper_width"/>
+            <CONNECTION INSTANCE="control_parametros_0" PORT="pulseShaper_width1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="window" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_window">
+        <PORT DIR="I" LEFT="15" NAME="window" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_window1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="control_parametros_0" PORT="window"/>
+            <CONNECTION INSTANCE="control_parametros_0" PORT="window1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -321,19 +321,19 @@
             <CONNECTION INSTANCE="External_Ports" PORT="det_out_2"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="control_parametros_0_enableGateKeeper">
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="control_parametros_0_enableGateKeeper2">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="control_parametros_0" PORT="enableGateKeeper"/>
+            <CONNECTION INSTANCE="control_parametros_0" PORT="enableGateKeeper2"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="7" NAME="pulseShaper_width" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_pulseShaper_width">
+        <PORT DIR="I" LEFT="7" NAME="pulseShaper_width" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_pulseShaper_width2">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="control_parametros_0" PORT="pulseShaper_width"/>
+            <CONNECTION INSTANCE="control_parametros_0" PORT="pulseShaper_width2"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="window" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_window">
+        <PORT DIR="I" LEFT="15" NAME="window" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_window2">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="control_parametros_0" PORT="window"/>
+            <CONNECTION INSTANCE="control_parametros_0" PORT="window2"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1335,7 +1335,7 @@
     <MODULE COREREVISION="1" FULLNAME="/control_parametros_0" HWVERSION="1.0" INSTANCE="control_parametros_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="control_parametros" VLNV="xilinx.com:module_ref:control_parametros:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="GateKeeper_BD_control_parametros_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="GateKeeper_BD_control_parametros_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -1359,17 +1359,33 @@
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_100MHz"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="enableGateKeeper" SIGIS="undef" SIGNAME="control_parametros_0_enableGateKeeper">
+        <PORT DIR="O" NAME="enableGateKeeper0" SIGIS="undef" SIGNAME="control_parametros_0_enableGateKeeper0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="GateKeeper_0" PORT="enable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="enableGateKeeper1" SIGIS="undef" SIGNAME="control_parametros_0_enableGateKeeper1">
+          <CONNECTIONS>
             <CONNECTION INSTANCE="GateKeeper_1" PORT="enable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="enableGateKeeper2" SIGIS="undef" SIGNAME="control_parametros_0_enableGateKeeper2">
+          <CONNECTIONS>
             <CONNECTION INSTANCE="GateKeeper_2" PORT="enable"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="7" NAME="pulseShaper_width" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_pulseShaper_width">
+        <PORT DIR="O" LEFT="7" NAME="pulseShaper_width0" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_pulseShaper_width0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="GateKeeper_0" PORT="pulseShaper_width"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="pulseShaper_width1" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_pulseShaper_width1">
+          <CONNECTIONS>
             <CONNECTION INSTANCE="GateKeeper_1" PORT="pulseShaper_width"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="pulseShaper_width2" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_pulseShaper_width2">
+          <CONNECTIONS>
             <CONNECTION INSTANCE="GateKeeper_2" PORT="pulseShaper_width"/>
           </CONNECTIONS>
         </PORT>
@@ -1378,10 +1394,18 @@
             <CONNECTION INSTANCE="UART_Rx_0" PORT="readyRx"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="window" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_window">
+        <PORT DIR="O" LEFT="15" NAME="window0" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_window0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="GateKeeper_0" PORT="window"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="window1" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_window1">
+          <CONNECTIONS>
             <CONNECTION INSTANCE="GateKeeper_1" PORT="window"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="window2" RIGHT="0" SIGIS="undef" SIGNAME="control_parametros_0_window2">
+          <CONNECTIONS>
             <CONNECTION INSTANCE="GateKeeper_2" PORT="window"/>
           </CONNECTIONS>
         </PORT>
