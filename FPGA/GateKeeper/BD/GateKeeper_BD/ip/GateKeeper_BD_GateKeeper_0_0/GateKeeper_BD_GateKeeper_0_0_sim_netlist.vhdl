@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Mon Mar 31 13:40:44 2025
+-- Date        : Mon Mar 31 22:01:52 2025
 -- Host        : donaufeld running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_GateKeeper_0_0/GateKeeper_BD_GateKeeper_0_0_sim_netlist.vhdl
@@ -241,10 +241,10 @@ GateKeeper0_carry: unisim.vcomponents.CARRY4
       INIT => X"2F02"
     )
         port map (
-      I0 => c_reg(14),
-      I1 => \GateKeeper1__3_carry__2_n_6\,
-      I2 => \GateKeeper1__3_carry__2_n_5\,
-      I3 => c_reg(15),
+      I0 => \GateKeeper1__3_carry__2_n_6\,
+      I1 => c_reg(14),
+      I2 => c_reg(15),
+      I3 => \GateKeeper1__3_carry__2_n_5\,
       O => \GateKeeper0_carry__0_i_1_n_0\
     );
 \GateKeeper0_carry__0_i_2\: unisim.vcomponents.LUT4
@@ -252,10 +252,10 @@ GateKeeper0_carry: unisim.vcomponents.CARRY4
       INIT => X"2F02"
     )
         port map (
-      I0 => c_reg(12),
-      I1 => \GateKeeper1__3_carry__1_n_4\,
-      I2 => \GateKeeper1__3_carry__2_n_7\,
-      I3 => c_reg(13),
+      I0 => \GateKeeper1__3_carry__1_n_4\,
+      I1 => c_reg(12),
+      I2 => c_reg(13),
+      I3 => \GateKeeper1__3_carry__2_n_7\,
       O => \GateKeeper0_carry__0_i_2_n_0\
     );
 \GateKeeper0_carry__0_i_3\: unisim.vcomponents.LUT4
@@ -263,10 +263,10 @@ GateKeeper0_carry: unisim.vcomponents.CARRY4
       INIT => X"2F02"
     )
         port map (
-      I0 => c_reg(10),
-      I1 => \GateKeeper1__3_carry__1_n_6\,
-      I2 => \GateKeeper1__3_carry__1_n_5\,
-      I3 => c_reg(11),
+      I0 => \GateKeeper1__3_carry__1_n_6\,
+      I1 => c_reg(10),
+      I2 => c_reg(11),
+      I3 => \GateKeeper1__3_carry__1_n_5\,
       O => \GateKeeper0_carry__0_i_3_n_0\
     );
 \GateKeeper0_carry__0_i_4\: unisim.vcomponents.LUT4
@@ -274,10 +274,10 @@ GateKeeper0_carry: unisim.vcomponents.CARRY4
       INIT => X"2F02"
     )
         port map (
-      I0 => c_reg(8),
-      I1 => \GateKeeper1__3_carry__0_n_4\,
-      I2 => \GateKeeper1__3_carry__1_n_7\,
-      I3 => c_reg(9),
+      I0 => \GateKeeper1__3_carry__0_n_4\,
+      I1 => c_reg(8),
+      I2 => c_reg(9),
+      I3 => \GateKeeper1__3_carry__1_n_7\,
       O => \GateKeeper0_carry__0_i_4_n_0\
     );
 \GateKeeper0_carry__0_i_5\: unisim.vcomponents.LUT4
@@ -285,10 +285,10 @@ GateKeeper0_carry: unisim.vcomponents.CARRY4
       INIT => X"9009"
     )
         port map (
-      I0 => c_reg(14),
-      I1 => \GateKeeper1__3_carry__2_n_6\,
-      I2 => c_reg(15),
-      I3 => \GateKeeper1__3_carry__2_n_5\,
+      I0 => \GateKeeper1__3_carry__2_n_6\,
+      I1 => c_reg(14),
+      I2 => \GateKeeper1__3_carry__2_n_5\,
+      I3 => c_reg(15),
       O => \GateKeeper0_carry__0_i_5_n_0\
     );
 \GateKeeper0_carry__0_i_6\: unisim.vcomponents.LUT4
@@ -296,10 +296,10 @@ GateKeeper0_carry: unisim.vcomponents.CARRY4
       INIT => X"9009"
     )
         port map (
-      I0 => c_reg(12),
-      I1 => \GateKeeper1__3_carry__1_n_4\,
-      I2 => c_reg(13),
-      I3 => \GateKeeper1__3_carry__2_n_7\,
+      I0 => \GateKeeper1__3_carry__1_n_4\,
+      I1 => c_reg(12),
+      I2 => \GateKeeper1__3_carry__2_n_7\,
+      I3 => c_reg(13),
       O => \GateKeeper0_carry__0_i_6_n_0\
     );
 \GateKeeper0_carry__0_i_7\: unisim.vcomponents.LUT4
@@ -307,10 +307,10 @@ GateKeeper0_carry: unisim.vcomponents.CARRY4
       INIT => X"9009"
     )
         port map (
-      I0 => c_reg(10),
-      I1 => \GateKeeper1__3_carry__1_n_6\,
-      I2 => c_reg(11),
-      I3 => \GateKeeper1__3_carry__1_n_5\,
+      I0 => \GateKeeper1__3_carry__1_n_6\,
+      I1 => c_reg(10),
+      I2 => \GateKeeper1__3_carry__1_n_5\,
+      I3 => c_reg(11),
       O => \GateKeeper0_carry__0_i_7_n_0\
     );
 \GateKeeper0_carry__0_i_8\: unisim.vcomponents.LUT4
@@ -318,10 +318,10 @@ GateKeeper0_carry: unisim.vcomponents.CARRY4
       INIT => X"9009"
     )
         port map (
-      I0 => c_reg(8),
-      I1 => \GateKeeper1__3_carry__0_n_4\,
-      I2 => c_reg(9),
-      I3 => \GateKeeper1__3_carry__1_n_7\,
+      I0 => \GateKeeper1__3_carry__0_n_4\,
+      I1 => c_reg(8),
+      I2 => \GateKeeper1__3_carry__1_n_7\,
+      I3 => c_reg(9),
       O => \GateKeeper0_carry__0_i_8_n_0\
     );
 GateKeeper0_carry_i_1: unisim.vcomponents.LUT4
@@ -329,10 +329,10 @@ GateKeeper0_carry_i_1: unisim.vcomponents.LUT4
       INIT => X"2F02"
     )
         port map (
-      I0 => c_reg(6),
-      I1 => \GateKeeper1__3_carry__0_n_6\,
-      I2 => \GateKeeper1__3_carry__0_n_5\,
-      I3 => c_reg(7),
+      I0 => \GateKeeper1__3_carry__0_n_6\,
+      I1 => c_reg(6),
+      I2 => c_reg(7),
+      I3 => \GateKeeper1__3_carry__0_n_5\,
       O => GateKeeper0_carry_i_1_n_0
     );
 GateKeeper0_carry_i_2: unisim.vcomponents.LUT4
@@ -340,10 +340,10 @@ GateKeeper0_carry_i_2: unisim.vcomponents.LUT4
       INIT => X"2F02"
     )
         port map (
-      I0 => c_reg(4),
-      I1 => \GateKeeper1__3_carry_n_4\,
-      I2 => \GateKeeper1__3_carry__0_n_7\,
-      I3 => c_reg(5),
+      I0 => \GateKeeper1__3_carry_n_4\,
+      I1 => c_reg(4),
+      I2 => c_reg(5),
+      I3 => \GateKeeper1__3_carry__0_n_7\,
       O => GateKeeper0_carry_i_2_n_0
     );
 GateKeeper0_carry_i_3: unisim.vcomponents.LUT4
@@ -351,21 +351,21 @@ GateKeeper0_carry_i_3: unisim.vcomponents.LUT4
       INIT => X"2F02"
     )
         port map (
-      I0 => c_reg(2),
-      I1 => \GateKeeper1__3_carry_n_6\,
-      I2 => \GateKeeper1__3_carry_n_5\,
-      I3 => c_reg(3),
+      I0 => \GateKeeper1__3_carry_n_6\,
+      I1 => c_reg(2),
+      I2 => c_reg(3),
+      I3 => \GateKeeper1__3_carry_n_5\,
       O => GateKeeper0_carry_i_3_n_0
     );
 GateKeeper0_carry_i_4: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"8F08"
+      INIT => X"1F01"
     )
         port map (
-      I0 => window(0),
-      I1 => c_reg(0),
-      I2 => \GateKeeper1__3_carry_n_7\,
-      I3 => c_reg(1),
+      I0 => c_reg(0),
+      I1 => window(0),
+      I2 => c_reg(1),
+      I3 => \GateKeeper1__3_carry_n_7\,
       O => GateKeeper0_carry_i_4_n_0
     );
 GateKeeper0_carry_i_5: unisim.vcomponents.LUT4
@@ -373,10 +373,10 @@ GateKeeper0_carry_i_5: unisim.vcomponents.LUT4
       INIT => X"9009"
     )
         port map (
-      I0 => c_reg(6),
-      I1 => \GateKeeper1__3_carry__0_n_6\,
-      I2 => c_reg(7),
-      I3 => \GateKeeper1__3_carry__0_n_5\,
+      I0 => \GateKeeper1__3_carry__0_n_6\,
+      I1 => c_reg(6),
+      I2 => \GateKeeper1__3_carry__0_n_5\,
+      I3 => c_reg(7),
       O => GateKeeper0_carry_i_5_n_0
     );
 GateKeeper0_carry_i_6: unisim.vcomponents.LUT4
@@ -384,10 +384,10 @@ GateKeeper0_carry_i_6: unisim.vcomponents.LUT4
       INIT => X"9009"
     )
         port map (
-      I0 => c_reg(4),
-      I1 => \GateKeeper1__3_carry_n_4\,
-      I2 => c_reg(5),
-      I3 => \GateKeeper1__3_carry__0_n_7\,
+      I0 => \GateKeeper1__3_carry_n_4\,
+      I1 => c_reg(4),
+      I2 => \GateKeeper1__3_carry__0_n_7\,
+      I3 => c_reg(5),
       O => GateKeeper0_carry_i_6_n_0
     );
 GateKeeper0_carry_i_7: unisim.vcomponents.LUT4
@@ -395,10 +395,10 @@ GateKeeper0_carry_i_7: unisim.vcomponents.LUT4
       INIT => X"9009"
     )
         port map (
-      I0 => c_reg(2),
-      I1 => \GateKeeper1__3_carry_n_6\,
-      I2 => c_reg(3),
-      I3 => \GateKeeper1__3_carry_n_5\,
+      I0 => \GateKeeper1__3_carry_n_6\,
+      I1 => c_reg(2),
+      I2 => \GateKeeper1__3_carry_n_5\,
+      I3 => c_reg(3),
       O => GateKeeper0_carry_i_7_n_0
     );
 GateKeeper0_carry_i_8: unisim.vcomponents.LUT4
@@ -406,10 +406,10 @@ GateKeeper0_carry_i_8: unisim.vcomponents.LUT4
       INIT => X"6006"
     )
         port map (
-      I0 => c_reg(0),
-      I1 => window(0),
-      I2 => c_reg(1),
-      I3 => \GateKeeper1__3_carry_n_7\,
+      I0 => window(0),
+      I1 => c_reg(0),
+      I2 => \GateKeeper1__3_carry_n_7\,
+      I3 => c_reg(1),
       O => GateKeeper0_carry_i_8_n_0
     );
 \GateKeeper1__3_carry\: unisim.vcomponents.CARRY4

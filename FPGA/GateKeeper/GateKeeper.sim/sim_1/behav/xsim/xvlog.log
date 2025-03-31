@@ -2,5 +2,3 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/danie/Documents/GitHub/Gat
 INFO: [VRFC 10-311] analyzing module GateKeeper
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/srcs/tb_GateKeeper.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_GateKeeper
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

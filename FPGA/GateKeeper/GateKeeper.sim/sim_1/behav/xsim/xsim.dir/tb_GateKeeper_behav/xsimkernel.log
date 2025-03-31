@@ -1,4 +1,4 @@
-Running: xsim.dir/tb_GateKeeper_behav/xsimk.exe -simmode gui -wdb tb_GateKeeper_behav.wdb -simrunnum 0 -socket 60953
+Running: xsim.dir/tb_GateKeeper_behav/xsimk.exe -simmode gui -wdb tb_GateKeeper_behav.wdb -simrunnum 0 -socket 51857
 Design successfully loaded
 Design Loading Memory Usage: 9276 KB (Peak: 9276 KB)
 Design Loading CPU Usage: 77 ms

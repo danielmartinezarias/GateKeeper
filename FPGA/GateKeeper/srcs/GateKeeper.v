@@ -45,7 +45,7 @@ always@(posedge clk) begin
         case(state)
             0:begin
                 if(det_in)begin//input signal
-                    if(c>=(window-16'd1))begin // if c is smaller than window (events close to each other)
+                    if(c<=(window-16'd1))begin // if c is smaller than window (events close to each other)
                         GateKeeper <= 1'd0; // discard det_out
                         state       <= 1; // jump to state 1
                     end
