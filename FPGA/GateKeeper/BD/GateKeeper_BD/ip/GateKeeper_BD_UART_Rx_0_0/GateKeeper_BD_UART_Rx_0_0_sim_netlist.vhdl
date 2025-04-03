@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Wed Mar 26 11:18:50 2025
+-- Date        : Wed Mar 26 11:18:49 2025
 -- Host        : donaufeld running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_UART_Rx_0_0/GateKeeper_BD_UART_Rx_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top GateKeeper_BD_UART_Rx_0_0 -prefix
+--               GateKeeper_BD_UART_Rx_0_0_ GateKeeper_BD_UART_Rx_0_0_sim_netlist.vhdl
 -- Design      : GateKeeper_BD_UART_Rx_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -35,8 +35,6 @@ entity GateKeeper_BD_UART_Rx_0_0_OneShot is
     readyRx : in STD_LOGIC;
     tick : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_UART_Rx_0_0_OneShot : entity is "OneShot";
 end GateKeeper_BD_UART_Rx_0_0_OneShot;
 
 architecture STRUCTURE of GateKeeper_BD_UART_Rx_0_0_OneShot is
@@ -171,8 +169,6 @@ entity GateKeeper_BD_UART_Rx_0_0_UART_Rx is
     tick : in STD_LOGIC;
     PinRx : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_UART_Rx_0_0_UART_Rx : entity is "UART_Rx";
 end GateKeeper_BD_UART_Rx_0_0_UART_Rx;
 
 architecture STRUCTURE of GateKeeper_BD_UART_Rx_0_0_UART_Rx is

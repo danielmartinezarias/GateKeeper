@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../bd/GateKeeper_BD/ip/GateKeeper_BD_axi_gpio_0_0/sim/GateKeeper_BD_axi_gpio_0_0.vhd" \
+"../../../bd/GateKeeper_BD/ip/GateKeeper_BD_rst_ps7_0_100M_0/sim/GateKeeper_BD_rst_ps7_0_100M_0.vhd" \
+
+# Do not sort compile order
+nosort

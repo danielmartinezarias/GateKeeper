@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Wed Mar 26 11:39:21 2025
+-- Date        : Wed Mar 26 11:39:20 2025
 -- Host        : donaufeld running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_axi_gpio_0_0/GateKeeper_BD_axi_gpio_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top GateKeeper_BD_axi_gpio_0_0 -prefix
+--               GateKeeper_BD_axi_gpio_0_0_ GateKeeper_BD_axi_gpio_0_0_sim_netlist.vhdl
 -- Design      : GateKeeper_BD_axi_gpio_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -21,8 +21,6 @@ entity GateKeeper_BD_axi_gpio_0_0_cdc_sync is
     gpio_io_i : in STD_LOGIC_VECTOR ( 4 downto 0 );
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_axi_gpio_0_0_cdc_sync : entity is "cdc_sync";
 end GateKeeper_BD_axi_gpio_0_0_cdc_sync;
 
 architecture STRUCTURE of GateKeeper_BD_axi_gpio_0_0_cdc_sync is
@@ -348,8 +346,6 @@ entity GateKeeper_BD_axi_gpio_0_0_pselect_f is
     ce_expnd_i_3 : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_axi_gpio_0_0_pselect_f : entity is "pselect_f";
 end GateKeeper_BD_axi_gpio_0_0_pselect_f;
 
 architecture STRUCTURE of GateKeeper_BD_axi_gpio_0_0_pselect_f is
@@ -415,8 +411,6 @@ entity GateKeeper_BD_axi_gpio_0_0_GPIO_Core is
     Bus_RNW_reg : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_axi_gpio_0_0_GPIO_Core : entity is "GPIO_Core";
 end GateKeeper_BD_axi_gpio_0_0_GPIO_Core;
 
 architecture STRUCTURE of GateKeeper_BD_axi_gpio_0_0_GPIO_Core is
@@ -796,8 +790,6 @@ entity GateKeeper_BD_axi_gpio_0_0_address_decoder is
     s_axi_awready : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_axi_gpio_0_0_address_decoder : entity is "address_decoder";
 end GateKeeper_BD_axi_gpio_0_0_address_decoder;
 
 architecture STRUCTURE of GateKeeper_BD_axi_gpio_0_0_address_decoder is
@@ -1074,8 +1066,6 @@ entity GateKeeper_BD_axi_gpio_0_0_slave_attachment is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_axi_gpio_0_0_slave_attachment : entity is "slave_attachment";
 end GateKeeper_BD_axi_gpio_0_0_slave_attachment;
 
 architecture STRUCTURE of GateKeeper_BD_axi_gpio_0_0_slave_attachment is
@@ -1720,8 +1710,6 @@ entity GateKeeper_BD_axi_gpio_0_0_axi_lite_ipif is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_axi_gpio_0_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end GateKeeper_BD_axi_gpio_0_0_axi_lite_ipif;
 
 architecture STRUCTURE of GateKeeper_BD_axi_gpio_0_0_axi_lite_ipif is
@@ -1825,8 +1813,6 @@ entity GateKeeper_BD_axi_gpio_0_0_axi_gpio is
   attribute C_TRI_DEFAULT of GateKeeper_BD_axi_gpio_0_0_axi_gpio : entity is "32'b11111111111111111111111111111111";
   attribute C_TRI_DEFAULT_2 : string;
   attribute C_TRI_DEFAULT_2 of GateKeeper_BD_axi_gpio_0_0_axi_gpio : entity is "32'b11111111111111111111111111111111";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_axi_gpio_0_0_axi_gpio : entity is "axi_gpio";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of GateKeeper_BD_axi_gpio_0_0_axi_gpio : entity is "yes";
   attribute ip_group : string;

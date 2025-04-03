@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 -- Date        : Fri Mar 28 13:22:01 2025
 -- Host        : donaufeld running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_clk_wiz_0_0/GateKeeper_BD_clk_wiz_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top GateKeeper_BD_clk_wiz_0_0 -prefix
+--               GateKeeper_BD_clk_wiz_0_0_ GateKeeper_BD_clk_wiz_0_0_sim_netlist.vhdl
 -- Design      : GateKeeper_BD_clk_wiz_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -15,15 +15,15 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity GateKeeper_BD_clk_wiz_0_0_clk_wiz is
+entity GateKeeper_BD_clk_wiz_0_0_GateKeeper_BD_clk_wiz_0_0_clk_wiz is
   port (
     clk_100MHz : out STD_LOGIC;
     clk_400MHz : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
-end GateKeeper_BD_clk_wiz_0_0_clk_wiz;
+end GateKeeper_BD_clk_wiz_0_0_GateKeeper_BD_clk_wiz_0_0_clk_wiz;
 
-architecture STRUCTURE of GateKeeper_BD_clk_wiz_0_0_clk_wiz is
+architecture STRUCTURE of GateKeeper_BD_clk_wiz_0_0_GateKeeper_BD_clk_wiz_0_0_clk_wiz is
   signal clk_100MHz_GateKeeper_BD_clk_wiz_0_0 : STD_LOGIC;
   signal clk_400MHz_GateKeeper_BD_clk_wiz_0_0 : STD_LOGIC;
   signal clk_in1_GateKeeper_BD_clk_wiz_0_0 : STD_LOGIC;
@@ -184,7 +184,7 @@ end GateKeeper_BD_clk_wiz_0_0;
 
 architecture STRUCTURE of GateKeeper_BD_clk_wiz_0_0 is
 begin
-inst: entity work.GateKeeper_BD_clk_wiz_0_0_clk_wiz
+inst: entity work.GateKeeper_BD_clk_wiz_0_0_GateKeeper_BD_clk_wiz_0_0_clk_wiz
      port map (
       clk_100MHz => clk_100MHz,
       clk_400MHz => clk_400MHz,

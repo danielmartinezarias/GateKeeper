@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Mon Mar 31 14:09:13 2025
+-- Date        : Thu Apr  3 16:19:27 2025
 -- Host        : donaufeld running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_1/GateKeeper_BD_control_parametros_0_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top GateKeeper_BD_control_parametros_0_1 -prefix
+--               GateKeeper_BD_control_parametros_0_1_ GateKeeper_BD_control_parametros_0_1_sim_netlist.vhdl
 -- Design      : GateKeeper_BD_control_parametros_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -35,8 +35,6 @@ entity GateKeeper_BD_control_parametros_0_1_OneShot is
     \d2_reg[0]\ : in STD_LOGIC;
     readyRx : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_control_parametros_0_1_OneShot : entity is "OneShot";
 end GateKeeper_BD_control_parametros_0_1_OneShot;
 
 architecture STRUCTURE of GateKeeper_BD_control_parametros_0_1_OneShot is
@@ -199,8 +197,6 @@ entity GateKeeper_BD_control_parametros_0_1_control_parametros is
     bufferRx : in STD_LOGIC_VECTOR ( 7 downto 0 );
     SW : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_control_parametros_0_1_control_parametros : entity is "control_parametros";
 end GateKeeper_BD_control_parametros_0_1_control_parametros;
 
 architecture STRUCTURE of GateKeeper_BD_control_parametros_0_1_control_parametros is
@@ -2140,8 +2136,8 @@ architecture STRUCTURE of GateKeeper_BD_control_parametros_0_1 is
 begin
   LED(7 downto 3) <= \^led\(7 downto 3);
   LED(2) <= \^sw\(0);
-  LED(1) <= \<const0>\;
-  LED(0) <= \^sw\(0);
+  LED(1) <= \^sw\(0);
+  LED(0) <= \<const0>\;
   \^sw\(0) <= SW(0);
 GND: unisim.vcomponents.GND
      port map (

@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Mon Mar 31 14:09:13 2025
+// Date        : Thu Apr  3 16:19:27 2025
 // Host        : donaufeld running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_1/GateKeeper_BD_control_parametros_0_1_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top GateKeeper_BD_control_parametros_0_1 -prefix
+//               GateKeeper_BD_control_parametros_0_1_ GateKeeper_BD_control_parametros_0_1_sim_netlist.v
 // Design      : GateKeeper_BD_control_parametros_0_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -64,8 +64,8 @@ module GateKeeper_BD_control_parametros_0_1
 
   assign LED[7:3] = \^LED [7:3];
   assign LED[2] = SW[0];
-  assign LED[1] = \<const0> ;
-  assign LED[0] = SW[0];
+  assign LED[1] = SW[0];
+  assign LED[0] = \<const0> ;
   GND GND
        (.G(\<const0> ));
   GateKeeper_BD_control_parametros_0_1_control_parametros inst
@@ -85,7 +85,6 @@ module GateKeeper_BD_control_parametros_0_1
         .window2(window2));
 endmodule
 
-(* ORIG_REF_NAME = "OneShot" *) 
 module GateKeeper_BD_control_parametros_0_1_OneShot
    (\ctrl_reg[2] ,
     \ctrl_reg[4] ,
@@ -243,7 +242,6 @@ module GateKeeper_BD_control_parametros_0_1_OneShot
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "control_parametros" *) 
 module GateKeeper_BD_control_parametros_0_1_control_parametros
    (window0,
     LED,

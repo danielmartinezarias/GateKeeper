@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Mon Mar 31 22:01:52 2025
+-- Date        : Thu Apr  3 16:27:09 2025
 -- Host        : donaufeld running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_GateKeeper_0_0/GateKeeper_BD_GateKeeper_0_0_stub.vhdl
@@ -20,7 +20,8 @@ entity GateKeeper_BD_GateKeeper_0_0 is
     window : in STD_LOGIC_VECTOR ( 15 downto 0 );
     pulseShaper_width : in STD_LOGIC_VECTOR ( 7 downto 0 );
     det_in : in STD_LOGIC;
-    det_out : out STD_LOGIC
+    det_out : out STD_LOGIC;
+    GateKeeper : out STD_LOGIC
   );
 
 end GateKeeper_BD_GateKeeper_0_0;
@@ -29,7 +30,7 @@ architecture stub of GateKeeper_BD_GateKeeper_0_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "clk,enable,window[15:0],pulseShaper_width[7:0],det_in,det_out";
+attribute black_box_pad_pin of stub : architecture is "clk,enable,window[15:0],pulseShaper_width[7:0],det_in,det_out,GateKeeper";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "GateKeeper,Vivado 2023.2";
 begin

@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 -- Date        : Wed Mar 26 11:39:18 2025
 -- Host        : donaufeld running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_rst_ps7_0_100M_0/GateKeeper_BD_rst_ps7_0_100M_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top GateKeeper_BD_rst_ps7_0_100M_0 -prefix
+--               GateKeeper_BD_rst_ps7_0_100M_0_ GateKeeper_BD_rst_ps7_0_100M_0_sim_netlist.vhdl
 -- Design      : GateKeeper_BD_rst_ps7_0_100M_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -26,8 +26,6 @@ entity GateKeeper_BD_rst_ps7_0_100M_0_cdc_sync is
     aux_reset_in : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_rst_ps7_0_100M_0_cdc_sync : entity is "cdc_sync";
 end GateKeeper_BD_rst_ps7_0_100M_0_cdc_sync;
 
 architecture STRUCTURE of GateKeeper_BD_rst_ps7_0_100M_0_cdc_sync is
@@ -248,8 +246,6 @@ entity GateKeeper_BD_rst_ps7_0_100M_0_upcnt_n is
     seq_cnt_en : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_rst_ps7_0_100M_0_upcnt_n : entity is "upcnt_n";
 end GateKeeper_BD_rst_ps7_0_100M_0_upcnt_n;
 
 architecture STRUCTURE of GateKeeper_BD_rst_ps7_0_100M_0_upcnt_n is
@@ -414,8 +410,6 @@ entity GateKeeper_BD_rst_ps7_0_100M_0_lpf is
     ext_reset_in : in STD_LOGIC;
     aux_reset_in : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_rst_ps7_0_100M_0_lpf : entity is "lpf";
 end GateKeeper_BD_rst_ps7_0_100M_0_lpf;
 
 architecture STRUCTURE of GateKeeper_BD_rst_ps7_0_100M_0_lpf is
@@ -604,8 +598,6 @@ entity GateKeeper_BD_rst_ps7_0_100M_0_sequence_psr is
     lpf_int : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_rst_ps7_0_100M_0_sequence_psr : entity is "sequence_psr";
 end GateKeeper_BD_rst_ps7_0_100M_0_sequence_psr;
 
 architecture STRUCTURE of GateKeeper_BD_rst_ps7_0_100M_0_sequence_psr is
@@ -944,8 +936,6 @@ entity GateKeeper_BD_rst_ps7_0_100M_0_proc_sys_reset is
   attribute C_NUM_PERP_ARESETN of GateKeeper_BD_rst_ps7_0_100M_0_proc_sys_reset : entity is 1;
   attribute C_NUM_PERP_RST : integer;
   attribute C_NUM_PERP_RST of GateKeeper_BD_rst_ps7_0_100M_0_proc_sys_reset : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of GateKeeper_BD_rst_ps7_0_100M_0_proc_sys_reset : entity is "proc_sys_reset";
 end GateKeeper_BD_rst_ps7_0_100M_0_proc_sys_reset;
 
 architecture STRUCTURE of GateKeeper_BD_rst_ps7_0_100M_0_proc_sys_reset is

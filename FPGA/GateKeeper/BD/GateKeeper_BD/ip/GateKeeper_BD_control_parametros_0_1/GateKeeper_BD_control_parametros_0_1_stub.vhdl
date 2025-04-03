@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Mon Mar 31 14:09:13 2025
+-- Date        : Thu Apr  3 16:19:27 2025
 -- Host        : donaufeld running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_control_parametros_0_1/GateKeeper_BD_control_parametros_0_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top GateKeeper_BD_control_parametros_0_1 -prefix
+--               GateKeeper_BD_control_parametros_0_1_ GateKeeper_BD_control_parametros_0_1_stub.vhdl
 -- Design      : GateKeeper_BD_control_parametros_0_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

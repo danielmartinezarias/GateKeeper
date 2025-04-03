@@ -61,7 +61,8 @@ module GateKeeper_BD_GateKeeper_1_0 (
   window,
   pulseShaper_width,
   det_in,
-  det_out
+  det_out,
+  GateKeeper
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 400000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *)
@@ -72,6 +73,7 @@ input wire [15 : 0] window;
 input wire [7 : 0] pulseShaper_width;
 input wire det_in;
 output wire det_out;
+output wire GateKeeper;
 
   GateKeeper inst (
     .clk(clk),
@@ -79,6 +81,7 @@ output wire det_out;
     .window(window),
     .pulseShaper_width(pulseShaper_width),
     .det_in(det_in),
-    .det_out(det_out)
+    .det_out(det_out),
+    .GateKeeper(GateKeeper)
   );
 endmodule

@@ -41,7 +41,8 @@
         "window": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
         "pulseShaper_width": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
         "det_in": [ { "direction": "in" } ],
-        "det_out": [ { "direction": "out" } ]
+        "det_out": [ { "direction": "out" } ],
+        "GateKeeper": [ { "direction": "out", "driver_value": "0x1" } ]
       },
       "interfaces": {
         "clk": {

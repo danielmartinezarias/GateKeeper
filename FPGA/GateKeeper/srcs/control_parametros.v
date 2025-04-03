@@ -54,7 +54,7 @@ reg [15:0] orden = 0;
 reg [31:0] counter = 32'd0;
 
 
-reg [7:0] version = 8'd5; // version
+reg [7:0] version = 8'd6; // version
 
 assign LED = (SW[0]) ? {window0[4:0],version[2:0]}:8'd0;
 

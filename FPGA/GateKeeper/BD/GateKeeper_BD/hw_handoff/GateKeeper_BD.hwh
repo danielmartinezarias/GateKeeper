@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 31 21:58:32 2025" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Apr  3 16:25:45 2025" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="avnet.com:zedboard:part0:1.4" DEVICE="7z020" NAME="GateKeeper_BD" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -226,6 +226,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
+        <PORT DIR="O" NAME="GateKeeper" SIGIS="undef"/>
         <PORT CLKFREQUENCY="400000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_400MHz">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_400MHz"/>
@@ -266,6 +267,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
+        <PORT DIR="O" NAME="GateKeeper" SIGIS="undef"/>
         <PORT CLKFREQUENCY="400000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_400MHz">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_400MHz"/>
@@ -306,6 +308,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
+        <PORT DIR="O" NAME="GateKeeper" SIGIS="undef"/>
         <PORT CLKFREQUENCY="400000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_400MHz">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_400MHz"/>

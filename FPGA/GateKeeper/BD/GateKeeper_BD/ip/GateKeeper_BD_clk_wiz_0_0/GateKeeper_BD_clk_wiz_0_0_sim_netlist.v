@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Fri Mar 28 13:22:01 2025
+// Date        : Fri Mar 28 13:22:00 2025
 // Host        : donaufeld running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/BD/GateKeeper_BD/ip/GateKeeper_BD_clk_wiz_0_0/GateKeeper_BD_clk_wiz_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top GateKeeper_BD_clk_wiz_0_0 -prefix
+//               GateKeeper_BD_clk_wiz_0_0_ GateKeeper_BD_clk_wiz_0_0_sim_netlist.v
 // Design      : GateKeeper_BD_clk_wiz_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -26,13 +26,13 @@ module GateKeeper_BD_clk_wiz_0_0
   wire clk_400MHz;
   (* IBUF_LOW_PWR *) wire clk_in1;
 
-  GateKeeper_BD_clk_wiz_0_0_clk_wiz inst
+  GateKeeper_BD_clk_wiz_0_0_GateKeeper_BD_clk_wiz_0_0_clk_wiz inst
        (.clk_100MHz(clk_100MHz),
         .clk_400MHz(clk_400MHz),
         .clk_in1(clk_in1));
 endmodule
 
-module GateKeeper_BD_clk_wiz_0_0_clk_wiz
+module GateKeeper_BD_clk_wiz_0_0_GateKeeper_BD_clk_wiz_0_0_clk_wiz
    (clk_100MHz,
     clk_400MHz,
     clk_in1);

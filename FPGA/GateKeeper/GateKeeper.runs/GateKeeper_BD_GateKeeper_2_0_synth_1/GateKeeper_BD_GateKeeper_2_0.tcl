@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "GateKeeper_BD_GateKeeper_2_0_synth_1" START { ROLLUP_AUTO }
-set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 set_param ips.modRefOverrideMrefDirPath c:/Users/danie/Documents/GitHub/GateKeeper/FPGA/GateKeeper/GateKeeper.gen/sources_1/bd/mref

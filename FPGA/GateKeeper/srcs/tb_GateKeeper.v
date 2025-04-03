@@ -25,9 +25,10 @@ module tb_GateKeeper();
     reg clk = 0;
     reg enable = 1;
     reg [15:0] window = 16'd6;
-    reg [7:0] pulseShaper_width = 8'd4;
+    reg [7:0] pulseShaper_width = 8'd20;
     reg det_in = 0;
     wire det_out;
+    wire GateKeeper;
     
     // Clock Generation (400 MHz -> 2.5 ns period)
     always #1.25 clk = ~clk;
@@ -39,7 +40,8 @@ module tb_GateKeeper();
         .window(window),
         .pulseShaper_width(pulseShaper_width),
         .det_in(det_in),
-        .det_out(det_out)
+        .det_out(det_out),
+        .GateKeeper(GateKeeper)
     );
     
     // Stimulus
@@ -49,48 +51,50 @@ module tb_GateKeeper();
         
         #15;
         det_in = 1;
-        #2.5;
+        #50;
         det_in = 0;
         
         #50;
         det_in = 1;
-        #2.5;
+        #50;
+        det_in = 0;
+
+        #13.0;
+        det_in = 1;
+        #50;
         det_in = 0;
         
-        #10;
+        #14.0;
         det_in = 1;
-        #2.5;
+        #50;
         det_in = 0;
 
-        #1;
+        #15.0;
         det_in = 1;
-        #2.5;
-        det_in = 0;
-
-        #1;
-        det_in = 1;
-        #2.5;
+        #50;
         det_in = 0;
         
-        #30;
+        #16.0;
         det_in = 1;
-        #2.5;
+        #50;
         det_in = 0;
 
-        #11.5;
+        #17.0;
         det_in = 1;
-        #2.5;
+        #50;
         det_in = 0;
 
-        #30;
+        #18.0;
         det_in = 1;
-        #2.5;
+        #50;
         det_in = 0;
 
-        #12.5;
+        #19.0;
         det_in = 1;
-        #2.5;
+        #50;
         det_in = 0;
+
+        
 
         $finish;
     end
