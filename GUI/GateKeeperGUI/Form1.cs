@@ -61,6 +61,8 @@ namespace GateKeeperGUI
             //cargo la configuracion anterior
             //numericUpDown1.Enabled = true;
             button1.Enabled = true;
+            button2.Enabled = true;
+            button3.Enabled = true;
             numericUpDown1.Enabled = true;
             numericUpDown2.Enabled = true;
             numericUpDown3.Enabled = true;

@@ -4,7 +4,7 @@ from uart_lib import UARTSender
 if __name__ == "__main__":
 
     # specify parameters
-    uart = UARTSender(port="COM10")  # Choose the right COM port
+    uart = UARTSender(port="COM9")  # Choose the right COM port
     clk = 2.5  # 2.5 ns per clk cycle
 
     ########################################
